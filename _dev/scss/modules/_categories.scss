@@ -1,0 +1,144 @@
+// ---------------------------------------------------------------------
+// Categories styles here
+// ---------------------------------------------------------------------
+
+
+#categories {
+  width: 100%;
+
+  @include stop-at($bot-bp) {
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    padding-right: 24px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &::-moz-scrollbar {
+      display: none;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0px;  /* remove scrollbar space */
+      background: transparent;  /* optional: just make scrollbar invisible */
+      background: red;
+      height: 2px;
+      background: $gray-light;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $brand;
+    }
+
+    .categories__inner {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: auto;
+      padding-left: 12px;
+    }
+  }
+
+  @include start-at($bot-bp) {
+    width: 68px;
+    max-height: 90%;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    z-index: 4;
+
+  }
+
+  @include start-at($large) {
+    left: 0;
+  }
+}
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+
+.category {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  margin: 4px;
+  border-radius: 3px;
+  background: $gray-light;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 8px;
+  transition: background $trans, border-color $trans;
+
+  &:after {
+    content: '';
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: $brand;
+    transform-origin: left;
+    transition: transform $trans;
+    transform: scaleX(0);
+
+    @include start-at($bot-bp) {
+      transform: scaleY(0);
+      width: 8px;
+      height: 100%;
+    }
+  }
+
+  p {
+    font-family: $mono;
+    color: $gray-dark;
+    font-size: 18px;
+    margin: 0 0 0 12px;
+  }
+
+  img {
+    width: 32px;
+  }
+
+  @include stop-at($bot-bp) {
+    justify-content: center;
+    margin: 2px;
+
+    p {
+      @include visually-hidden;
+    }
+  }
+
+  @include start-at($bot-bp) {
+    width: 212px;
+    height: 44px;
+    padding: 0 16px;
+
+
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: darken($gray-light, 8%);
+  }
+
+  &.is-active {
+    &:after {
+      background: $brand;
+      transform: scaleX(1);
+
+      @include start-at($bot-bp) {
+        transform: scaleY(1);
+      }
+    }
+  }
+}

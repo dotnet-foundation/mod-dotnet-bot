@@ -1,0 +1,22 @@
+// ---------------------------------------------------------------------
+//  Links
+// ---------------------------------------------------------------------
+
+
+.button {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  background: $brand;
+  border-radius: 3px;
+  color: $white;
+  font-weight: 600;
+  padding: 8px 14px;
+  margin: 0;
+  transition: background $trans;
+
+  &:hover {
+    cursor: pointer;
+    background: darken($brand, 8%);
+  }
+}

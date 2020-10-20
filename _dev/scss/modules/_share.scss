@@ -1,0 +1,139 @@
+// ---------------------------------------------------------------------
+// Share styles
+// ---------------------------------------------------------------------
+
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+#img,
+#image-file {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  @include visually-hidden;
+}
+
+#canvas {
+  @include visually-hidden;
+  position: absolute;
+  display: none;
+}
+
+#tweetPreviewImg {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+#tweet-preview {
+
+  textarea {
+    padding: 12px;
+    width: 100%;
+    margin: 12px auto;
+    display: block;
+    border-radius: 3px;
+    background: $gray-light;
+    color: $black;
+    resize: none;
+    min-height: 104px;
+    max-height: 184px;
+  }
+
+  .tweet-char-count {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: $gray-dark;
+    // margin-top: -36px;
+    // padding-right: 12px;
+    z-index: 3;
+    position: relative;
+  }
+
+  button {
+    background: $brand;
+    border-radius: 3px;
+    color: $white;
+    font-weight: 600;
+    padding: 8px 14px;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+}
+
+// ----------------------------------------
+// Terms
+// ----------------------------------------
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+
+
+  input {
+    @include visually-hidden;
+  }
+
+  label {
+    font-size: 16px;
+    position: relative;
+    padding-left: 30px;
+    color: $black;
+    font-weight: 400;
+
+    a {
+      color: $brand;
+      text-decoration: underline;
+      transition: color $trans;
+
+      &:hover {
+          color: lighten($brand, 12%);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 1px solid $gray-dark;
+      border-radius: 3px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 2px;
+      transition: border-color $trans;
+    }
+
+    &:after {
+      content: '';
+      width: 12px;
+      height: 9px;
+      background: $white;
+      display: block;
+      position: absolute;
+      left: 4px;
+      top: 8px;
+      background: url('../images/svgs/check-simple.svg') center / cover no-repeat;
+      transform: scale(0);
+      transition: transform 0.4s $bounce;
+    }
+  }
+
+  input:checked + label {
+
+    &:before {
+      border: 1px solid $gray;
+    }
+
+    &:after {
+      transform: scale(1)
+    }
+  }
+}

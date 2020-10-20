@@ -1,0 +1,52 @@
+// ---------------------------------------------------------------------
+//  Global Header Styles
+// ---------------------------------------------------------------------
+
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.site-footer {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	background: $brand;
+  margin-top: 36px;
+	text-align: center;
+
+  @include start-at($medium) {
+    margin-top: 0;
+		text-align: left;
+  }
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 24px 0;
+
+    @include start-at($medium) {
+      height: 60px;
+      padding: 0;
+    }
+	}
+
+  small {
+    color: $white;
+    font-weight: 600;
+    font-size: 14px;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+
+      &:hover {
+        color: $gray-light;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,93 @@
+// ---------------------------------------------------------------------
+//  SCSS Settings
+// ---------------------------------------------------------------------
+
+
+// ----------------------------------------
+// Fonts
+// ----------------------------------------
+
+// 400 | 600
+$sans-serif: 'Open Sans', mono, sans-serif;
+
+// 400
+$mono: 'consolas', mono, sans-serif;
+
+
+// ----------------------------------------
+// Font Size/ Line Height
+// ----------------------------------------
+$main-font: $sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.375;
+
+
+// ----------------------------------------
+// Colors
+// ----------------------------------------
+
+
+$brand: #512BD4;
+
+$black: #333333;
+$white: #ffffff;
+
+$gray-dark: #666666;
+$gray: #B9B9B9;
+$gray-light: #F0F0F0;
+
+$border: #DCDCDC;
+
+
+$error: $red-300;
+
+
+// ----------------------------------------
+// Breakpoints
+// ----------------------------------------
+
+$xxlarge: 1600px;
+$xlarge: 1280px;
+$large: 1012px;
+$medium: 768px;
+$small: 544px;
+
+// $sm: 544px;
+// $md: 768px;
+// $lg: 1012px;
+// $xl: 1280px;
+
+
+
+@mixin start-at($device-width) {
+  @media (min-width: $device-width) {
+    @content;
+  }
+}
+
+
+
+@mixin stop-at($device-width) {
+  @media (max-width: $device-width - 1) {
+    @content;
+  }
+}
+
+
+// ----------------------------------------
+// Global Variables
+// ----------------------------------------
+
+$header-breakpoint: $medium;
+
+$bot-bp: $medium;
+
+$transition-speed: 0.4s;
+$transition: $transition-speed ease-in-out;
+// cuz I no type good
+$trans: $transition-speed ease-in-out;
+$bounce: cubic-bezier(0.68,-0.25,0.27,1.25);
+
+$wrapper-percentage: 90%;
+$wrapper-width: 1440px;
+$wrapper-padding: (100% - $wrapper-percentage) / 2;

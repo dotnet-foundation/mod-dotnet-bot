@@ -1,0 +1,103 @@
+// ---------------------------------------------------------------------
+//  Modal
+// ---------------------------------------------------------------------
+
+
+$speaker-breakpoint: $large;
+
+.modal-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  z-index: 2000;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity $trans;
+
+  .screen {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  	background: rgba(51, 51, 51, 0.6);
+
+    &:hover {
+      cursor: crosshair;
+    }
+  }
+
+  &.is-active {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+// ----------------------------------------
+// Modal Inner
+// ----------------------------------------
+
+.modal {
+  position: relative;
+  max-width: calc(100% - 24px);
+  max-height: calc(100% - 24px);
+  border-radius: 3px;
+  width: 492px;
+  height: auto;
+  min-height: 260px;
+  overflow: auto;
+  background: $white;
+  padding: 36px 24px;
+	z-index: 3;
+
+  @include start-at($medium) {
+    padding: 50px 50px;
+  }
+}
+
+
+body.modal-is-active,
+body.modal-is-active {
+  overflow: hidden;
+}
+
+body.modal-is-active {
+  overflow: hidden;
+}
+
+
+// ----------------------------------------
+// Modal Close
+// ----------------------------------------
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 18px;
+  cursor: pointer;
+
+  svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: $gray-dark;
+    transition: fill $trans;
+  }
+
+
+
+  &:hover svg {
+    fill: $gray;
+  }
+}

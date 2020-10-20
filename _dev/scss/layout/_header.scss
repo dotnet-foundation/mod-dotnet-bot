@@ -1,0 +1,466 @@
+// ---------------------------------------------------------------------
+//  Global Header Styles
+// ---------------------------------------------------------------------
+
+$header-height-sm: 60px;
+$header-height: 72px;
+
+// body.home {
+// 	padding-top: 60px;
+//
+// 	@include start-at($header-breakpoint) {
+//         padding-top: 72px;
+//     }
+// }
+
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.site-header {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	background: $brand;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 60px;
+
+		@include start-at($header-breakpoint) {
+			justify-content: flex-start;
+		}
+	}
+
+	h1 {
+		color: $white;
+		font-weight: 600;
+		font-size: 16px;
+		margin-right: 24px;
+
+		@include start-at($header-breakpoint) {
+			font-size: 20px;
+			margin-right: 48px;
+		}
+	}
+
+	ul {
+		display: flex;
+
+		li {
+			margin: 0 0 0 12px;
+
+			@include start-at($header-breakpoint) {
+				margin: 0 24px 0 0;
+			}
+		}
+
+		a {
+			color: $white;
+			font-weight: 400;
+			font-size: 14px;
+			transition: color $trans;
+
+			&:hover {
+				color: darken($gray-light, 8%);
+			}
+
+			@include start-at($header-breakpoint) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	@include start-at($header-breakpoint) {
+
+	}
+
+
+}
+
+
+
+
+.site-header__inner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: $header-height-sm;
+	border-bottom: 1px solid $gray-800;
+	z-index: 1;
+	background: rgba(4, 4, 5, 0.7);
+	transition: height $trans, background $trans;
+
+	@include start-at($header-breakpoint) {
+		justify-content: center;
+		height: $header-height;
+	}
+}
+
+// ----------------------------------------
+// Logo Styles
+// ----------------------------------------
+
+$logo-width: 162px;
+$logo-height: 72px;
+
+.logo {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	flex-grow: 1;
+	width: auto;
+	min-width: 150px;
+	margin: 0;
+	position: relative;
+	border-right: 1px solid $gray-800;
+	padding: 0 $wrapper-padding;
+
+	@include start-at($header-breakpoint) {
+		flex-grow: 0;
+		width: 20%;
+		justify-content: center;
+		padding: 0;
+	}
+
+	@include start-at($xlarge) {
+		width: 230px;
+		max-width: 230px;
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		max-width: 150px;
+		transition: width $trans;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+
+// ----------------------------------------
+// Slidding Panel
+// ----------------------------------------
+
+
+.site-header-panel {
+	flex-grow: 1;
+
+	> * {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-nav li:hover {
+		a {
+			color: $green;
+		}
+	}
+
+	.main-nav li.is-active {
+		a {
+			color: $green;
+			background: $gray-800;
+		}
+	}
+
+	.main-nav {
+
+		a {
+			display: inline-block;
+			font-weight: 500;
+			font-size: 16px;
+			color: $white;
+			letter-spacing: 0.5px;
+			line-height: 1;
+			transition: color $trans;
+			text-decoration: none;
+			padding: 8px;
+			position: relative;
+			white-space: nowrap;
+
+			@include start-at($large) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	li.current_page_item > a {
+		//	color: $brand;
+
+		&:after {
+			transform: scaleY(1);
+		}
+	}
+
+	.has-sub-nav a svg {
+		display: none;
+	}
+
+	li.is-active > a {
+		color: $white;
+	}
+
+	@include start-at($header-breakpoint) {
+		width: 60%;
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.main-nav {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 94%;
+			//max-width: 620px;
+			text-align: center;
+
+			> * {
+				//flex-grow: 1;
+				padding: 0 6px;
+			}
+
+			a {
+				font-size: 12px;
+
+				&:after {
+					display: block;
+				}
+			}
+		}
+	}
+
+	@include start-at($xlarge) {
+
+		.main-nav {
+			//max-width: 680px;
+
+			> * {
+				//flex-grow: 1;
+				padding: 0 12px;
+			}
+		}
+
+		.main-nav a {
+			font-size: 14px;
+		}
+	}
+}
+
+
+
+// ----------------------------------------
+// Contat Link
+// ----------------------------------------
+
+.site-header-utility {
+	display: none;
+
+	@include start-at($header-breakpoint) {
+		display: flex;
+		align-items: stretch;
+		justify-content: flex-end;
+		height: 100%;
+		width: 20%;
+		min-width: 150px;
+		border-left: 1px solid $gray-800;
+	}
+
+	@include start-at($xlarge) {
+		width: 280px;
+		max-width: 280px;
+	}
+
+	.button {
+		text-transform: none;
+		letter-spacing: 0;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.main-nav a {
+		margin-right: 24px;
+		font-size: 12px;
+		font-weight: 500;
+		color: $white;
+		transition: color $trans;
+
+		&:hover {
+			//	color: darken($brand, 20%);
+		}
+
+		@include start-at($large) {
+			font-size: 13px;
+		}
+	}
+
+	a.button {
+		height: 100%;
+		background: black;
+		min-width: 100%;
+		white-space: nowrap;
+
+		svg {
+			margin-left: 16px;
+		}
+
+		&:after {
+			display: none;
+		}
+
+		&:hover {
+			background: darken($black, 5%);
+
+			svg {
+				transform: none;
+			}
+		}
+
+		@include start-at($header-breakpoint) {
+			//height: $header-height;
+			font-size: 10px;
+		}
+
+		@include start-at($xlarge) {
+			font-size: 14px;
+		}
+	}
+
+}
+
+.site-header-panel__ft {
+	display: none;
+}
+
+// ----------------------------------------
+// Mobile Menu
+// ----------------------------------------
+
+@include stop-at($header-breakpoint) {
+
+	$panel-width: 100%;
+
+	body.menu-is-open {
+		overflow: hidden;
+	}
+
+	.site-header-panel {
+		position: fixed;
+		height: calc(100% + 64px);
+		width: $panel-width;
+		left: 0;
+		//background: rgba(#1B1F23, 0.8);
+		background: rgba(4, 4, 5, 0.98);
+		z-index: 10;
+		bottom: 0;
+		top: $header-height-sm;
+		bottom: $header-height-sm;
+		padding: 0 0 $header-height-sm 0;
+		overflow: scroll;
+		transition: opacity $trans, transform $trans;
+		opacity: 0;
+		pointer-events: none;
+
+		// &:before {
+		// 	content: '';
+		// 	display: block;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 99px;
+		// 	height: 100%;
+		// 	z-index: -1;
+		// 	background: url('../img/pattern.svg') top left / auto repeat;
+		// }
+
+		.menu-is-open & {
+			opacity: 1;
+			pointer-events: inherit;
+			//transform: translate3d(0, 0, 0);
+		}
+
+		> * {
+			width: 100%;
+			min-height: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			padding-bottom: 64px;
+		}
+
+		.main-nav {
+			width: 100%;
+			padding: 36px 24px;
+			display: block;
+			flex-grow: 1;
+			text-align: center;
+			//padding-left: 124px;
+
+			a {
+				display: block;
+				width: 100%;
+				padding: 16px 12px;
+				font-weight: 400;
+				font-size: 18px;
+				transition: color $trans;
+
+				&:hover {
+					color: $yellow;
+				}
+			}
+		}
+
+		.site-header-panel__ft {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			left: 0;
+			height: 56px;
+			min-height: 56px;
+			background: rgba(4,4,5,0.9);
+			background: $yellow;
+			color: $gray-800;
+			padding: 0 12px;
+			z-index: 2;
+			text-align: center;
+			border-top: 1px solid $gray-800;
+
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 0.1em;
+
+			svg {
+				width: 16px;
+				margin-left: 8px;
+				transition: transform $trans;
+
+				* {
+					fill: $gray-800;
+				}
+			}
+
+			&:hover {
+				svg {
+					transform: translate3d(4px, 0, 0);
+				}
+			}
+		}
+	}
+}

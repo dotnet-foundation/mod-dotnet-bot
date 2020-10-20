@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content= "#1B1F23">
+  <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="stylesheet" media="screen" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  {% seo %}
+  <link id="favicon" rel="shortcut icon" type="image/ico" href="{{ '/assets/images/favicons/favicon.png' | relative_url }}" />
+  <link rel="apple-touch-icon" href="{{ '/assets/images/favicons/apple-touch-icon.png' | relative_url }}" />
+  <link rel="icon" href="{{ '/assets/images/favicons/android-favicon.png' | relative_url }}">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+
+<body id="page-{{ page.id }}">
+  <a class="sr-only" href="#content">skip to content</a>
+
+  {% include header.html %}
+
+  <main id="content" class="main page-content" aria-label="Content">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <!-- JAVASCRIPT -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

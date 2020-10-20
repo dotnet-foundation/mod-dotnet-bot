@@ -1,0 +1,93 @@
+// ---------------------------------------------------------------------
+//
+// ---------------------------------------------------------------------
+
+$intro-bp: $medium;
+
+.intro {
+  margin: 72px auto;
+  max-width: 1200px;
+  text-align: center;
+
+  @include start-at($intro-bp) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+
+    .h1 {
+      max-width: 336px;
+    }
+  }
+
+  .intro__img {
+    margin-bottom: 24px;
+    max-width: 100%;
+
+    img {
+      width: 420px;
+      max-width: 100%;
+    }
+
+    @include start-at($intro-bp) {
+      width: calc(50% - 24px);
+      order: 2;
+      margin-bottom: 0;
+
+      img {
+        width: auto;
+        max-width: 100%;
+      }
+    }
+
+    @include start-at($intro-bp) {
+      width: 680px;
+      order: 2;
+    }
+
+  }
+
+  .intro__content {
+
+
+    @include start-at($intro-bp) {
+      width: calc(50% - 24px);
+      order: 1;
+      min-width: 360px;
+
+    }
+  }
+}
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.gallery {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  figure,
+  .spacer {
+    width: 100%;
+    margin-bottom: 24px;
+
+    img {
+      margin: 0 auto;
+    }
+
+    @include start-at($small) {
+      width: calc(50% - 24px);
+    }
+
+    @include start-at($medium) {
+      width: calc(33% - 24px);
+    }
+  }
+
+  .spacer {
+    margin-bottom: 0;
+  }
+}

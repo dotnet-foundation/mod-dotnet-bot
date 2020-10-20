@@ -1,0 +1,12 @@
+// ---------------------------------------------------------------------
+//  Utility Classes
+// ---------------------------------------------------------------------
+
+
+.border-top,
+.border-left,
+.border-right,
+.border-bottom {
+  border-color: $gray-800 !important;
+  border-width: 1px !important;
+}

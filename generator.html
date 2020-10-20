@@ -1,0 +1,268 @@
+---
+layout: default
+title: Create your Dotnet Bot
+id: generator
+permalink: /create-your-bot/
+---
+
+
+
+<section id="generator">
+
+  <div id="bot-holder">
+    <svg id="bot" viewBox="0 0 2000 2000">
+      <g id="backgrounds-holder"></g>
+      {% include body.html %}
+      <g id="legs-holder"></g>
+      <g id="arms-holder"></g>
+      <g id="antenna-holder"></g>
+      <g id="headgear-holder"></g>
+      <g id="eyes-holder"></g>
+      <g id="eyewear-holder"></g>
+    </svg>
+  </div>
+
+  <div id="categories">
+    <div class="categories__inner">
+      <div class="category is-active" data-category="arms">
+        <img src="{{ '/objects/arms/icons/default.svg' | relative_url }}" alt="arms icon" />
+        <p>Arms</p>
+      </div>
+      <div class="category" data-category="legs">
+        <img src="{{ '/objects/legs/icons/default.svg' | relative_url }}" alt="legs icon" />
+        <p>Legs</p>
+      </div>
+      <div class="category" data-category="eyes">
+        <img src="{{ '/objects/eyes/icons/default.svg' | relative_url }}" alt="eyes icon" />
+        <p>Eyes</p>
+      </div>
+      <div class="category" data-category="antenna">
+        <img src="{{ '/objects/antenna/icons/default.svg' | relative_url }}" alt="antenna icon" />
+        <p>Antenna</p>
+      </div>
+      <div class="category" data-category="headgear">
+        <img src="{{ '/objects/headgear/icons/default.svg' | relative_url }}" alt="headgear icon" />
+        <p>Headgear</p>
+      </div>
+      <div class="category" data-category="eyewear">
+        <img src="{{ '/objects/eyewear/icons/default.svg' | relative_url }}" alt="eyewear icon" />
+        <p>Eyewear</p>
+      </div>
+      <div class="category" data-category="backgrounds">
+        <img src="{{ '/objects/backgrounds/icons/default.svg' | relative_url }}" alt="backgrounds icon" />
+        <p>Backgrounds</p>
+      </div>
+        <div class="spacer"></div>
+    </div>
+  </div>
+
+  <div id="objects" class="object-wrap">
+    <div class="arrow-prev">
+      <img src="{{ '/assets/images/svgs/chevron-left.svg' | relative_url }}" alt="left arrow icon" />
+    </div>
+
+    <div class="objects-wrap">
+      <div class="objects__inner">
+        <div class="object-group is-active" data-objects="arms">
+
+          {% for object in site.data.arms %}
+          <div class="object{% if object.default %} object--default{% endif %}" data-holder="arms-holder" data-object-title="arm-{{ object.title|slugify }}">
+            <span class="sr-only">{{ object.title }}</span>
+
+            {% capture icon %}/objects/arms/icons/{{ object.icon }}{% endcapture %}
+            <img src="{{ icon | relative_url }}" alt="{{ object.title }} icon" />
+
+            {% if object.file %}
+            {% include_relative objects/arms/{{object.file}} %}
+            {% endif %}
+          </div>
+          {% endfor %}
+
+          <div class="spacer"></div>
+        </div>
+
+        <div class="object-group" data-objects="legs">
+          {% for object in site.data.legs %}
+          <div class="object{% if object.default %} object--default{% endif %}" data-holder="legs-holder" data-object-title="leg-{{ object.title|slugify }}">
+            <span class="sr-only">{{ object.title }}</span>
+            {% capture icon %}/objects/legs/icons/{{ object.icon }}{% endcapture %}
+            <img src="{{ icon | relative_url }}" alt="{{ object.title }} icon" />
+            {% if object.file %}
+            {% include_relative objects/legs/{{object.file}} %}
+            {% endif %}
+          </div>
+          {% endfor %}
+          <div class="spacer"></div>
+        </div>
+
+
+        <div class="object-group" data-objects="eyes">
+          {% for object in site.data.eyes %}
+          <div class="object{% if object.default %} object--default{% endif %}" data-holder="eyes-holder" data-object-title="eyes-{{ object.title|slugify }}">
+            <span class="sr-only">{{ object.title }}</span>
+            {% capture icon %}/objects/eyes/icons/{{ object.icon }}{% endcapture %}
+            <img src="{{ icon | relative_url }}" alt="{{ object.title }} icon" />
+            {% if object.file %}
+            {% include_relative objects/eyes/{{object.file}} %}
+            {% endif %}
+          </div>
+          {% endfor %}
+          <div class="spacer"></div>
+        </div>
+
+
+        <div class="object-group" data-objects="eyewear">
+          {% for object in site.data.eyewear %}
+          <div class="object{% if object.default %} object--default{% endif %}" data-holder="eyewear-holder" data-object-title="eyewear-{{ object.title|slugify }}">
+            <span class="sr-only">{{ object.title }}</span>
+
+            {% capture icon %}/objects/eyewear/icons/{{ object.icon }}{% endcapture %}
+            <img src="{{ icon | relative_url }}" alt="{{ object.title }} icon" />
+
+            {% if object.file %}
+            {% include_relative objects/eyewear/{{object.file}} %}
+            {% endif %}
+          </div>
+          {% endfor %}
+          <div class="spacer"></div>
+        </div>
+
+        <div class="object-group" data-objects="headgear">
+          {% for object in site.data.headgear %}
+          <div class="object{% if object.default %} object--default{% endif %}" data-holder="headgear-holder" data-object-title="headgear-{{ object.title|slugify }}">
+            <span class="sr-only">{{ object.title }}</span>
+            {% capture icon %}/objects/headgear/icons/{{ object.icon }}{% endcapture %}
+            <img src="{{ icon | relative_url }}" alt="{{ object.title }} icon" />
+
+            {% if object.file %}
+              {% include_relative objects/headgear/{{object.file}} %}
+            {% endif %}
+          </div>
+          {% endfor %}
+          <div class="spacer"></div>
+        </div>
+
+        <div class="object-group" data-objects="antenna">
+          {% for object in site.data.antenna %}
+          <div class="object{% if object.default %} object--default{% endif %}" data-holder="antenna-holder" data-object-title="antenna-{{ object.title|slugify }}">
+            <span class="sr-only">{{ object.title }}</span>
+            {% capture icon %}/objects/antenna/icons/{{ object.icon }}{% endcapture %}
+            <img src="{{ icon | relative_url }}" alt="{{ object.title }} icon" />
+
+            {% if object.file %}
+              {% include_relative objects/antenna/{{object.file}} %}
+            {% endif %}
+          </div>
+          {% endfor %}
+          <div class="spacer"></div>
+        </div>
+
+        <div class="object-group" data-objects="backgrounds">
+          {% for object in site.data.backgrounds %}
+          <div class="object{% if object.default %} object--default{% endif %}" data-holder="backgrounds-holder" data-object-title="bg-{{ object.title|slugify }}">
+            <span class="sr-only">{{ object.title }}</span>
+            {% capture icon %}/objects/backgrounds/icons/{{ object.icon }}{% endcapture %}
+            <img src="{{ icon | relative_url }}" alt="{{ object.title }} icon" />
+
+            {% if object.file %}
+            {% include_relative objects/backgrounds/{{object.file}} %}
+            {% endif %}
+          </div>
+          {% endfor %}
+          <div class="spacer"></div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+    </div>
+
+    <div class="arrow-next">
+      <img src="{{ '/assets/images/svgs/chevron-right.svg' | relative_url }}" alt="right arrow icon" />
+    </div>
+  </div>
+
+  <div class="controls">
+    <a class="icon js-toggle-share" href="">
+      <span class="sr-only">Share your Bot on Twitter</span>
+      <img src="{{ 'assets/images/svgs/twitter.svg' | relative_url }}" alt="twitter icon" />
+    </a>
+
+    <a class="icon js-toggle-share" href="">
+      <span class="sr-only">Download your Bot</span>
+      <img src="{{ 'assets/images/svgs/download.svg' | relative_url }}" alt="download icon" />
+    </a>
+  </div>
+
+
+
+  <div class="modal-wrap" id="share-modal">
+
+    <div class="modal" id="export-content">
+
+      <div id="export-content">
+
+        <div class="text-center mb-4">
+          <h4 class="h3">Share your dotnet-bot</h4>
+          <p>Your dotnet-bot is ready for adventure! Now its time to share your dotnet-bot with the world.</p>
+        </div>
+
+        <div class="d-flex flex-item-center flex-justify-center my-4">
+          <a id="share-on-twitter" class="mx-3 icon" href="" disabled>
+            <span class="sr-only">Share your Bot on Twitter</span>
+            <img src="{{ 'assets/images/svgs/twitter.svg' | relative_url }}" alt="twitter icon" />
+          </a>
+
+          <a id="download-file" class="mx-3 icon" href="" disabled>
+            <span class="sr-only">Download your Bot</span>
+            <img src="{{ 'assets/images/svgs/download.svg' | relative_url }}" alt="download icon" />
+          </a>
+        </div>
+
+
+        <img id="img" src="" alt="Custom Dotnet bot"/>
+        <input id="image-file" type="text" value="" />
+      </div>
+
+
+      <div class="mt-4 d-none" id="tweet-preview">
+        <img id="tweetPreviewImg" src=""/>
+
+        <textarea id="tweet-text" class="d-block" maxlength="280">#modthebot is out of the bag… create your own at modthedotnetbot.com</textarea>
+
+        <div class="d-flex flex-items-start flex-justify-between mt-3">
+          <button class="btn btn--sm btn--alt btn--wide" type="submit" id="tweet">Post to twitter</button>
+          <span class="tweet-char-count"><span id="tweet-text-count"></span>/280</span>
+        </div>
+
+
+        <!-- <a class="ui-icon ui-icon--sm keep-editing" href="">
+          <img src="/assets/images/svgs/close.svg" alt="Mail icon" />
+          <span class="sr-only">Keep Editing</span>
+        </a> -->
+      </div>
+
+      <div class="checkbox mt-6">
+        <input type="checkbox" id="terms" value="" />
+        <label for="terms" id="terms-label">I agree to the <a href="{{ 'terms' | relative_url }}" target="_blank">Terms & Conditions</a></label>
+      </div>
+
+      <div class="modal__close js-toggle-share">
+        <svg width="20" height="20" viewBox="0 0 20 20">
+          <path d="M11.0664 10L19.1523 18.0977L18.0977 19.1523L10 11.0664L1.90234 19.1523L0.847656 18.0977L8.93359 10L0.847656 1.90234L1.90234 0.847656L10 8.93359L18.0977 0.847656L19.1523 1.90234L11.0664 10Z"  />
+        </svg>
+      </div>
+    </div>
+
+
+
+    <div class="screen js-toggle-share">
+
+    </div>
+  </div>
+
+</section>
+
+<div class="loader">
+  <svg viewBox="0 0 24 24" width="24" height="24"><path d="M3.38 8A9.502 9.502 0 0112 2.5a9.502 9.502 0 019.215 7.182.75.75 0 101.456-.364C21.473 4.539 17.15 1 12 1a10.995 10.995 0 00-9.5 5.452V4.75a.75.75 0 00-1.5 0V8.5a1 1 0 001 1h3.75a.75.75 0 000-1.5H3.38zm-.595 6.318a.75.75 0 00-1.455.364C2.527 19.461 6.85 23 12 23c4.052 0 7.592-2.191 9.5-5.451v1.701a.75.75 0 001.5 0V15.5a1 1 0 00-1-1h-3.75a.75.75 0 000 1.5h2.37A9.502 9.502 0 0112 21.5c-4.446 0-8.181-3.055-9.215-7.182z"></path></svg>
+</div>
+
+<canvas id="canvas" style="width: 500px; height: 500px;"></canvas>

@@ -1,0 +1,198 @@
+// ---------------------------------------------------------------------
+// Categories styles here
+// ---------------------------------------------------------------------
+
+#objects {
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid $border;
+  width: 100%;
+  transform: translate3d(0,0,0);
+  margin: 0 12px;
+  -webkit-backface-visibility: hidden;
+
+  @include start-at($bot-bp) {
+    position: absolute;
+    bottom: 24px;
+    width: calc(100% - 48px);
+    left: 24px;
+  }
+
+  @include start-at($large) {
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+
+  @media (hover: none) {
+    margin: 8px 0;
+    border: none;
+
+    .arrow-prev,
+    .arrow-next {
+      display: none;
+    }
+  }
+}
+
+.objects-wrap {
+  width: 100%;
+  overflow: scroll;
+  overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 12px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &::-moz-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+    background: red;
+    height: 2px;
+    background: $gray-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $brand;
+  }
+
+  @media (hover: hover) {
+    padding: 8px 64px;
+  }
+
+  @media (hover: none) {
+    padding: 8px 4px;
+  }
+
+  .objects__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+  }
+}
+
+.arrow-prev,
+.arrow-next {
+  position: fixed;
+  width: 48px;
+  background: $gray-light;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  z-index: 4;
+  transition: background $trans;
+  -webkit-backface-visibility: hidden;
+
+  &:hover {
+    cursor: pointer;
+    background: darken($gray-light, 8%);
+  }
+
+  svg, img {
+    display: block;
+    height: 24px;
+  }
+}
+
+.arrow-prev {
+  left: 0;
+  border-right: 1px solid $border;
+}
+.arrow-next {
+  right: 0;
+  border-left: 1px solid $border;
+  border-radius: 0 3px 3px 0;
+}
+
+.objects__inner {
+  position: relative;
+  width: 100%;
+
+  .object-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+
+    &.is-active {
+      position: relative;
+      display: flex;
+    }
+  }
+}
+
+.spacer {
+  display: block;
+  min-width: 36px;
+  height: 1px;
+
+  @include start-at($bot-bp) {
+    min-width: 60px;
+  }
+}
+
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+
+.object {
+  width: 72px;
+  min-width: 72px;
+  height: 72px;
+  margin: 0 8px;
+  border-radius: 3px;
+  background: $gray-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease, background 0.2s ease;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
+
+  @include start-at($bot-bp) {
+    margin: 0 10px;
+  }
+
+  &:after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 4px;
+    right: -8px;
+    border-radius: 50%;
+    display: block;
+    background: url('../images/svgs/check.svg') center / cover no-repeat;
+    transform: scale(0);
+    transition: transform 0.2s ease-in;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: darken($gray-light, 5%);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  &.is-active {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+    &:after {
+      transform: scale(1);
+    }
+  }
+}

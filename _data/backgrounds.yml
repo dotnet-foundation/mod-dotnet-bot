@@ -1,0 +1,40 @@
+- title: outter space moon background
+  icon: dotnet-bot-backgrounds_space.svg
+  file: dotnet-bot-backgrounds_space.svg
+  default: false
+
+- title: Clown stage background
+  icon: dotnet-bot-backgrounds_clown.svg
+  file: dotnet-bot-backgrounds_clown.svg
+
+- title: Construction site background
+  icon: dotnet-bot-backgrounds_construction.svg
+  file: dotnet-bot-backgrounds_construction.svg
+
+- title: Cowboy desert background
+  icon: dotnet-bot-backgrounds_cowboy.svg
+  file: dotnet-bot-backgrounds_cowboy.svg
+
+- title: Doctors office background
+  icon: dotnet-bot-backgrounds_doctor.svg
+  file: dotnet-bot-backgrounds_doctor.svg
+
+- title: Dungeons background
+  icon: dotnet-bot-backgrounds_dungeons.svg
+  file: dotnet-bot-backgrounds_dungeons.svg
+
+- title: Skatepark background
+  icon: dotnet-bot-backgrounds_skateboard.svg
+  file: dotnet-bot-backgrounds_skateboard.svg
+
+- title: Ski hill background
+  icon: dotnet-bot-backgrounds_skiier.svg
+  file: dotnet-bot-backgrounds_skiier.svg
+
+- title: Beach background
+  icon: dotnet-bot-backgrounds_snorkeler.svg
+  file: dotnet-bot-backgrounds_snorkeler.svg
+
+- title: Snowboarder hill background
+  icon: dotnet-bot-backgrounds_snowboarder.svg
+  file: dotnet-bot-backgrounds_snowboarder.svg

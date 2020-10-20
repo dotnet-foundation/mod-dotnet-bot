@@ -1,0 +1,27 @@
+
+.container-full {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: $wrapper-percentage;
+    max-width: $wrapper-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-md {
+    width: $wrapper-percentage;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container-wide {
+    width: $wrapper-percentage;
+    max-width: 1588px;
+    margin-left: auto;
+    margin-right: auto;
+}

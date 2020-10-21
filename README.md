@@ -5,6 +5,6 @@ Coding is better with friends, especially when they bring their own mods. As the
 
 Visit the [mod-dotnet-bot.net](https://mod-dotnet-bot.net) site to get started. 
 
-If you found a bug or want to request new parts for the bot, submit an issue!
+If you found a bug or want to request new parts for the dotnet-bot, submit an issue!
 
 The source code is licenced under [MIT](LICENSE). The dotnet-bot illustrations in this repo are licensed under the [CC0 1.0 Universal license](http://creativecommons.org/publicdomain/zero/1.0/). 

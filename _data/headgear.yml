@@ -1,91 +1,114 @@
 - title: Alien headband
   icon: dotnet-bot-headgear_alien-headband.svg
   file: dotnet-bot-headgear_alien-headband.svg
+  hideAntenna: false
 
 - title: Black beret
   icon: dotnet-bot-headgear_beret-black.svg
   file: dotnet-bot-headgear_beret-black.svg
+  hideAntenna: true
 
 - title: raspberry beret
   icon: dotnet-bot-headgear_beret-raspberry.svg
   file: dotnet-bot-headgear_beret-raspberry.svg
+  hideAntenna: true
 
 - title: blue bike helmet
   icon: dotnet-bot-headgear_bike-helemt-blue.svg
   file: dotnet-bot-headgear_bike-helemt-blue.svg
+  hideAntenna: true
 
 - title: red bike helmet
   icon: dotnet-bot-headgear_bike-helemt-red.svg
   file: dotnet-bot-headgear_bike-helemt-red.svg
+  hideAntenna: true
 
 - title: Clown hat
   icon: dotnet-bot-headgear_clown-hat.svg
   file: dotnet-bot-headgear_clown-hat.svg
+  hideAntenna: true
 
 - title: construction hardhat
   icon: dotnet-bot-headgear_construction-hat.svg
   file: dotnet-bot-headgear_construction-hat.svg
+  hideAntenna: true
 
 - title: Cowboy hat
   icon: dotnet-bot-headgear_cowboy-hat.svg
   file: dotnet-bot-headgear_cowboy-hat.svg
+  hideAntenna: true
 
 - title: Golden crown
   icon: dotnet-bot-headgear_crown.svg
   file: dotnet-bot-headgear_crown.svg
+  hideAntenna: false
 
 - title: Doctor hat and mask
   icon: dotnet-bot-headgear_doctor-hat.svg
   file: dotnet-bot-headgear_doctor-hat.svg
+  hideAntenna: true
 
 - title: Knights helmet with horns
   icon: dotnet-bot-headgear_dungeons-helmet.svg
   file: dotnet-bot-headgear_dungeons-helmet.svg
+  hideAntenna: true
 
 - title: Green mohawk
   icon: dotnet-bot-headgear_mohawk-green.svg
   file: dotnet-bot-headgear_mohawk-green.svg
+  hideAntenna: true
 
 - title: Yellow mohawk
   icon: dotnet-bot-headgear_mohawk-yellow.svg
   file: dotnet-bot-headgear_mohawk-yellow.svg
+  hideAntenna: true
 
 - title: Skateboard helmet
   icon: dotnet-bot-headgear_skateboard-helmet.svg
   file: dotnet-bot-headgear_skateboard-helmet.svg
+  hideAntenna: true
 
 - title: winter ski cap
   icon: dotnet-bot-headgear_ski-hat.svg
   file: dotnet-bot-headgear_ski-hat.svg
+  hideAntenna: true
 
 - title: Space helmet
   icon: dotnet-bot-headgear_space-helmet.svg
   file: dotnet-bot-headgear_space-helmet.svg
+  hideAntenna: true
 
 - title: Blue swim cap
   icon: dotnet-bot-headgear_swim-cap-blue.svg
   file: dotnet-bot-headgear_swim-cap-blue.svg
+  hideAntenna: false
 
 - title: Green swim cap
   icon: dotnet-bot-headgear_swim-cap-green.svg
   file: dotnet-bot-headgear_swim-cap-green.svg
+  hideAntenna: false
 
 - title: Red swim cap
   icon: dotnet-bot-headgear_swim-cap-red.svg
   file: dotnet-bot-headgear_swim-cap-red.svg
+  hideAntenna: false
 
 - title: Yellow swim cap
   icon: dotnet-bot-headgear_swim-cap-yellow.svg
   file: dotnet-bot-headgear_swim-cap-yellow.svg
+  hideAntenna: false
 
 - title: Black Wizard hat
   icon: dotnet-bot-headgear_wizard-hat-black.svg
   file: dotnet-bot-headgear_wizard-hat-black.svg
+  hideAntenna: true
 
 - title: Red wizard hat
   icon: dotnet-bot-headgear_wizard-hat-red.svg
   file: dotnet-bot-headgear_wizard-hat-red.svg
+  hideAntenna: true
 
 - title: turquoise wizard hat
   icon: dotnet-bot-headgear_wizard-hat-turquoise.svg
   file: dotnet-bot-headgear_wizard-hat-turquoise.svg
+  hideAntenna: true

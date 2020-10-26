@@ -11,6 +11,7 @@ permalink: /create-your-bot/
 
   <div id="bot-holder">
     <svg id="bot" viewBox="0 0 2000 2000">
+      <g id="ground"><ellipse fill="#DFD8F7" cx="999.9" cy="1659.2" rx="683.7" ry="154.3"/></g>
       <g id="backgrounds-holder"></g>
       {% include body.html %}
       <g id="legs-holder"></g>
@@ -63,7 +64,7 @@ permalink: /create-your-bot/
 
     <div class="objects-wrap">
       <div class="objects__inner">
-        <div class="object-group is-active" data-objects="arms">
+        <div class="object-group is-active has-default" data-objects="arms">
 
           {% for object in site.data.arms %}
           <div class="object{% if object.default %} object--default{% endif %}" data-holder="arms-holder" data-object-title="arm-{{ object.title|slugify }}">
@@ -81,7 +82,7 @@ permalink: /create-your-bot/
           <div class="spacer"></div>
         </div>
 
-        <div class="object-group" data-objects="legs">
+        <div class="object-group has-default" data-objects="legs">
           {% for object in site.data.legs %}
           <div class="object{% if object.default %} object--default{% endif %}" data-holder="legs-holder" data-object-title="leg-{{ object.title|slugify }}">
             <span class="sr-only">{{ object.title }}</span>
@@ -96,7 +97,7 @@ permalink: /create-your-bot/
         </div>
 
 
-        <div class="object-group" data-objects="eyes">
+        <div class="object-group has-default" data-objects="eyes">
           {% for object in site.data.eyes %}
           <div class="object{% if object.default %} object--default{% endif %}" data-holder="eyes-holder" data-object-title="eyes-{{ object.title|slugify }}">
             <span class="sr-only">{{ object.title }}</span>
@@ -129,7 +130,7 @@ permalink: /create-your-bot/
 
         <div class="object-group" data-objects="headgear">
           {% for object in site.data.headgear %}
-          <div class="object{% if object.default %} object--default{% endif %}" data-holder="headgear-holder" data-object-title="headgear-{{ object.title|slugify }}">
+          <div class="object{% if object.default %} object--default{% endif %}{% if object.hideAntenna %} hide-antenna{% endif %}" data-holder="headgear-holder" data-object-title="headgear-{{ object.title|slugify }}">
             <span class="sr-only">{{ object.title }}</span>
             {% capture icon %}/objects/headgear/icons/{{ object.icon }}{% endcapture %}
             <img src="{{ icon | relative_url }}" alt="{{ object.title }} icon" />
@@ -182,17 +183,10 @@ permalink: /create-your-bot/
 
   <div class="controls">
     <a class="icon js-toggle-share" href="">
-      <span class="sr-only">Share your Bot on Twitter</span>
-      <img src="{{ 'assets/images/svgs/twitter.svg' | relative_url }}" alt="twitter icon" />
-    </a>
-
-    <a class="icon js-toggle-share" href="">
-      <span class="sr-only">Download your Bot</span>
-      <img src="{{ 'assets/images/svgs/download.svg' | relative_url }}" alt="download icon" />
+      <span class="sr-only">Share or download your Bot</span>
+      <img src="{{ 'assets/images/svgs/share.svg' | relative_url }}" alt="twitter icon" />
     </a>
   </div>
-
-
 
   <div class="modal-wrap" id="share-modal">
 

@@ -16,6 +16,7 @@ class Save {
 
 		let termsAgreed = localStorage.getItem('modthebotterms');
 
+
 		$(document).ready(function(){
 			if( termsAgreed == 'true' ) {
 				terms.prop( "checked", true );
@@ -42,7 +43,6 @@ class Save {
 
 		toggleShare.click(function(e){
 			e.preventDefault();
-
 			if( shareModal.hasClass('is-active') ) {
 				shareModal.removeClass('is-active');
 				bd.removeClass('modal-is-active');
@@ -87,10 +87,7 @@ class Save {
 					sourceImage.width  = 2000;
 					sourceImage.height = 2000;
 
-
-
-
-					var filename = "dotnet-bot-mod";
+					var filename = "my-dotnet-bot-mod";
 
 					sourceImage.onload = function(){
 						//ctx.fillStyle = "#f6f8fa";

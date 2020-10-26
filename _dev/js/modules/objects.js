@@ -14,7 +14,6 @@ class Objects {
 
 	setup() {
 
-
 		// Objects
 		const bot = $('#bot');
 		const object = $('.object');
@@ -106,6 +105,16 @@ class Objects {
 				holder.empty();
 				obj.removeClass('is-active');
 
+				if( group.hasClass('has-default') ) {
+					console.log('has default');
+					group.find('.object.object--default').click();
+				}
+
+				if( obj.hasClass('hide-antenna') ) {
+					console.log('show antenna');
+					bot.removeClass('hide-antenna');
+				}
+
 			} else {
 
 				// Accessories stack so we can't empty the entire holder
@@ -126,6 +135,12 @@ class Objects {
 				// Clone and add to holder
 				let contentClone = contents.clone();
 				holder.append(contentClone);
+
+				if( obj.hasClass('hide-antenna') ) {
+					bot.addClass('hide-antenna');
+				} else {
+					bot.removeClass('hide-antenna');
+				}
 			}
 		});
 

@@ -1,32 +1,32 @@
 - title: Original eyes
   default: true
-  icon: dotnet-bot-eyes_original.svg
+  icon: original-eyes.svg
   file: dotnet-bot-eyes_original.svg
 
 - title: Closed
-  icon: dotnet-bot-eyes_closed-eyes.svg
+  icon: closed-eyes.svg
   file: dotnet-bot-eyes_closed-eyes.svg
 
 - title: Heart eyes
-  icon: dotnet-bot-eyes_hearts.svg
+  icon: heart-eyes.svg
   file: dotnet-bot-eyes_hearts.svg
 
 - title: inquisitive eyes
-  icon: dotnet-bot-eyes_inquisitive.svg
+  icon: inquisitive-eyes.svg
   file: dotnet-bot-eyes_inquisitive.svg
 
 - title: Shiny eyes
-  icon: dotnet-bot-eyes_shiny-eyes.svg
+  icon: Sparkle-eyes.svg
   file: dotnet-bot-eyes_shiny-eyes.svg
 
 - title: Smiling eyes
-  icon: dotnet-bot-eyes_smile.svg
+  icon: smiling-eyes.svg
   file: dotnet-bot-eyes_smile.svg
 
 - title: Star eyes
-  icon: dotnet-bot-eyes_stars.svg
+  icon: Star-eyes.svg
   file: dotnet-bot-eyes_stars.svg
 
 - title: Wink eye
-  icon: dotnet-bot-eyes_wink.svg
+  icon: winking-eyes.svg
   file: dotnet-bot-eyes_wink.svg

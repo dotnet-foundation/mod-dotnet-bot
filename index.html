@@ -65,41 +65,13 @@ id: home
   </header>
 
   <div class="container-md gallery">
+    
+    {% for image in site.data.gallery %}
+    {% capture img %}/assets/images/gallery/{{ image.image }}{% endcapture %}
     <figure data-animate-in="up">
-      <img src="{{ 'assets/images/Step-three.svg' | relative_url }}" alt="Dotnet bot" />
+      <img src="{{ img | relative_url }}" alt="{{ image.alt }}" />
     </figure>
-
-    <figure data-animate-in="up">
-      <img src="{{ 'assets/images/Step-three.svg' | relative_url }}" alt="Dotnet bot" />
-    </figure>
-
-    <figure data-animate-in="up">
-      <img src="{{ 'assets/images/Step-three.svg' | relative_url }}" alt="Dotnet bot" />
-    </figure>
-
-    <figure data-animate-in="up">
-      <img src="{{ 'assets/images/Step-three.svg' | relative_url }}" alt="Dotnet bot" />
-    </figure>
-
-    <figure data-animate-in="up">
-      <img src="{{ 'assets/images/Step-three.svg' | relative_url }}" alt="Dotnet bot" />
-    </figure>
-
-    <figure data-animate-in="up">
-      <img src="{{ 'assets/images/Step-three.svg' | relative_url }}" alt="Dotnet bot" />
-    </figure>
-
-    <figure data-animate-in="up">
-      <img src="{{ 'assets/images/Step-three.svg' | relative_url }}" alt="Dotnet bot" />
-    </figure>
-
-    <figure data-animate-in="up">
-      <img src="{{ 'assets/images/Step-three.svg' | relative_url }}" alt="Dotnet bot" />
-    </figure>
-
-    <figure data-animate-in="up">
-      <img src="{{ 'assets/images/Step-three.svg' | relative_url }}" alt="Dotnet bot" />
-    </figure>
+    {% endfor %}
 
     <span class="spacer"></span>
   </div>

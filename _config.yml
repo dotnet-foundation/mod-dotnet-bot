@@ -51,3 +51,12 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: assets/img/social-card.png
+      layout: default
+      is_post: true

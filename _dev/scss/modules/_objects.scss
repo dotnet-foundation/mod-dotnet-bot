@@ -148,7 +148,6 @@
 //
 // ----------------------------------------
 
-
 .object {
   width: 72px;
   min-width: 72px;
@@ -163,6 +162,11 @@
   position: relative;
   z-index: 2;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
+
+  > img {
+    max-height: 50px;
+    max-width: 60px;
+  }
 
   @include start-at($bot-bp) {
     margin: 0 10px;

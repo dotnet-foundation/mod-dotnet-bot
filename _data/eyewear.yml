@@ -1,52 +1,52 @@
 - title: tortouiseshell glasses
-  icon: dotnet-bot-eyewear_tortouiseshell-glasses.svg
+  icon: tortoise-shell-glasses.svg
   file: dotnet-bot-eyewear_tortouiseshell-glasses.svg
 
 - title: Red cat framed glasses
-  icon: dotnet-bot-eyewear_cateye.svg
+  icon: cateye-glasses.svg
   file: dotnet-bot-eyewear_cateye.svg
 
 - title: Safety goggles
-  icon: dotnet-bot-eyewear_construction-safety-glasses.svg
+  icon: construction-safety-glasses.svg
   file: dotnet-bot-eyewear_construction-safety-glasses.svg
 
 - title: Futuristic goggles
-  icon: dotnet-bot-eyewear_future-glasses.svg
+  icon: future-glasses.svg
   file: dotnet-bot-eyewear_future-glasses.svg
 
 - title: Fake mustache and glasses
-  icon: dotnet-bot-eyewear_mustache-glasses.svg
+  icon: mustache-glasses.svg
   file: dotnet-bot-eyewear_mustache-glasses.svg
 
 - title: black pinch glasses
-  icon: dotnet-bot-eyewear_pinch-glasses.svg
+  icon: pinch-glasses.svg
   file: dotnet-bot-eyewear_pinch-glasses.svg
 
 - title: Rainbow frame glasses
-  icon: dotnet-bot-eyewear_rainbow-glasses.svg
+  icon: rainbow-glasses.svg
   file: dotnet-bot-eyewear_rainbow-glasses.svg
 
 - title: Round spectacles
-  icon: dotnet-bot-eyewear_round.svg
+  icon: round-glasses.svg
   file: dotnet-bot-eyewear_round.svg
 
 - title: Red snowboard googles
-  icon: dotnet-bot-eyewear_ski-goggles_2.svg
+  icon: ski-goggles-red.svg
   file: dotnet-bot-eyewear_ski-goggles_2.svg
 
 - title: gradient ski goggles
-  icon: dotnet-bot-eyewear_ski-goggles.svg
+  icon: green-ski-goggles.svg
   file: dotnet-bot-eyewear_ski-goggles.svg
 
 - title: white and green snorkel mask 2
-  icon: dotnet-bot-eyewear_snorkel-mask_2.svg
+  icon: snorkel-mask-green.svg
   file: dotnet-bot-eyewear_snorkel-mask_2.svg
 
 - title: yellow snorkel mask
-  icon: dotnet-bot-eyewear_snorkel-mask.svg
+  icon: snorkel-mask-yellow.svg
   file: dotnet-bot-eyewear_snorkel-mask.svg
 
 
 - title: spiral glasses
-  icon: dotnet-bot-eyewear_spiral-glasses.svg
+  icon: spiral-goggles.svg
   file: dotnet-bot-eyewear_spiral-glasses.svg

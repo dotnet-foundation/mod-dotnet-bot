@@ -32,7 +32,7 @@
 
 - title: Red snowboard googles
   icon: ski-goggles-red.svg
-  file: dotnet-bot-eyewear_ski-goggles_2.svg
+  file: dotnet-bot-eyewear_ski-googles-red.svg
 
 - title: gradient ski goggles
   icon: green-ski-goggles.svg
@@ -40,11 +40,11 @@
 
 - title: white and green snorkel mask 2
   icon: snorkel-mask-green.svg
-  file: dotnet-bot-eyewear_snorkel-mask_2.svg
+  file: dotnet-bot-eyewear_snorkel-mask-green.svg
 
 - title: yellow snorkel mask
   icon: snorkel-mask-yellow.svg
-  file: dotnet-bot-eyewear_snorkel-mask.svg
+  file: dotnet-bot-eyewear_snorkel-mask-yellow.svg
 
 
 - title: spiral glasses

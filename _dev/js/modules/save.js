@@ -66,6 +66,15 @@ class Save {
 		function convert(selectors, callbackFunction, downloadObject, tweetObject){
 			[].forEach.call(document.querySelectorAll(selectors),function(div){
 				try{
+
+					let antenna = $('#antenna-holder');
+					let antennaContents = $('#antenna-holder').html();
+					
+					// Need to remove antenna for export, display none doesnt work
+					if( $('#bot').hasClass('hide-antenna') ) {
+						antenna.empty();
+					}
+
 					var sourceImage;
 
 					var img = document.getElementById('img'),
@@ -126,6 +135,13 @@ class Save {
 
 					sourceImage.src = svg ? svgDataURL(svg) : div.getAttribute('data-svgSource');
 
+
+					// Need to remove antenna for export, display none doesnt work
+					if( $('#bot').hasClass('hide-antenna') ) {
+						antenna.html(antennaContents);
+						// antennaContents = $('#antenna-holder').html();
+						// antenna.empty();
+					}
 
 				}catch(e){ console.log(e) }
 			});

@@ -17,7 +17,7 @@ id: home
   </div>
 </div>
 
-<div class="my-6 text-center container">
+<div class="my-6 container">
   <div class="col-md-10 col-lg-6 mx-auto" data-animate-in="up">
     <p class="h4 font-weight-400 font-ss">We get by with a little help from our friends. As the mascot for the .NET community, the dotnet-bot helps with checking pull-requests on .NET repos on GitHub. Create your own coding companion - mod a custom dotnet-bot all your own.</p>
   </div>
@@ -65,7 +65,7 @@ id: home
   </header>
 
   <div class="container-md gallery">
-    
+
     {% for image in site.data.gallery %}
     {% capture img %}/assets/images/gallery/{{ image.image }}{% endcapture %}
     <figure data-animate-in="up">

@@ -22,8 +22,8 @@ title: Mod the dotnet-bot
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   We get by with a little help from our friends. As the mascot for the .NET community, the dotnet-bot helps with checking pull-requests on .NET repos on GitHub. Create your own coding companion - mod a custom dotnet-bot all your own.
-baseurl: "/mod-dotnet-bot" # the subpath of your site, e.g. /blog
-url: "https://andrewrmn.github.io/dotnet-bot/" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/mod-dotnet-bot" # the subpath of your site, e.g. /blog
+url: "https://mod-dotnet-bot.net/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 

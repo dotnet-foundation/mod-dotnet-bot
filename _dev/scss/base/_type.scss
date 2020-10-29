@@ -154,6 +154,13 @@ p,
   @include para;
   a {
     color: $brand;
+    text-decoration: underline;
+    transition: opacity $trans;
+
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.6;
+    }
   }
 }
 
@@ -238,6 +245,17 @@ small,
 
     + p {
       margin-top: 36px;
+    }
+
+    a {
+      color: $brand;
+      text-decoration: underline;
+      transition: opacity $trans;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.6;
+      }
     }
   }
 }

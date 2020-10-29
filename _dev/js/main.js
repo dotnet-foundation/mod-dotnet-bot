@@ -5,7 +5,6 @@ const App = require('./modules/app.js');
 const Viewport = require('./modules/viewport.js');
 const Controls = require('./modules/controls.js');
 const Objects = require('./modules/objects.js');
-const Share = require('./modules/share.js');
 const Save = require('./modules/save.js');
 
 $(function(){
@@ -15,6 +14,5 @@ let viewport = new Viewport();
 
 let controls = new Controls();
 let objects = new Objects();
-let share = new Share();
 let save = new Save();
 });

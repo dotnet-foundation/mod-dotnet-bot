@@ -19,8 +19,8 @@ class Objects {
 		const object = $('.object');
 
 		// set gradient IDs
-		$(window).on('load', function(){
-			
+		$(document).ready(function(){
+
 			$('.object svg *[id]').each(function(){
 				let el = $(this);
 				let number = el.attr('id');

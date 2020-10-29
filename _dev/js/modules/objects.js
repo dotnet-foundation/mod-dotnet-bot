@@ -60,33 +60,18 @@ class Objects {
 
 			// Check if object is already active
 			if( obj.hasClass('is-active') ) {
-				// Accessories stack so we can't empty the entire holder
-				// if(cat == 'accessories') {
-				// 	// only remove clicked object
-				// 	holder.find('g.' + objName + '').remove();
-				// } else {
-				// 	// clear entire holder
-				// }
 				holder.empty();
 				obj.removeClass('is-active');
 
 				if( group.hasClass('has-default') ) {
-					console.log('has default');
 					group.find('.object.object--default').click();
 				}
 
 				if( obj.hasClass('hide-antenna') ) {
-					console.log('show antenna');
 					bot.removeClass('hide-antenna');
 				}
 
 			} else {
-
-				// Accessories stack so we can't empty the entire holder
-				// if(cat != 'accessories') {
-				// 	group.find('.object.is-active').removeClass('is-active');
-				// 	holder.empty();
-				// }
 
 				group.find('.object.is-active').removeClass('is-active');
 				holder.empty();
@@ -101,11 +86,14 @@ class Objects {
 				let contentClone = contents.clone();
 				holder.append(contentClone);
 
-				if( obj.hasClass('hide-antenna') ) {
-					bot.addClass('hide-antenna');
-				} else {
-					bot.removeClass('hide-antenna');
+				if(cat == 'headgear') {
+					if( obj.hasClass('hide-antenna') ) {
+						bot.addClass('hide-antenna');
+					} else {
+						bot.removeClass('hide-antenna');
+					}
 				}
+
 			}
 		});
 

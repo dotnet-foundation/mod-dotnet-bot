@@ -19,6 +19,7 @@ class Objects {
 		const object = $('.object');
 
 		// set gradient IDs
+		//$(window).load(function(){
 		$(document).ready(function(){
 
 			$('.object svg *[id]').each(function(){
@@ -36,14 +37,17 @@ class Objects {
 				});
 			});
 
+			console.log('ready');
 			// Set default objects
 			let defaultObjects = $('.object--default');
 			defaultObjects.each(function(){
-				//$(this).click();
-				$(this).trigger('click');
+				let el = $(this);
+				el.click();
 			});
+				console.log(defaultObjects.length);
 
 		});
+
 
 
 		object.click(function(){

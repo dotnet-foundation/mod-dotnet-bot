@@ -39,7 +39,8 @@ class Objects {
 			// Set default objects
 			let defaultObjects = $('.object--default');
 			defaultObjects.each(function(){
-				$(this).click();
+				//$(this).click();
+				$(this).trigger('click');
 			});
 
 		});

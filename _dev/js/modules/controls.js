@@ -10,7 +10,9 @@ class Controls {
 		this.defaults = {};
 		//merge options with defaults
 		this.settings = $.extend( true, {}, this.defaults, options );
-		this.setup();
+		if( $('#bot').length ) {
+			this.setup();
+		}
 	}
 
 	setup() {

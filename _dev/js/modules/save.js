@@ -5,6 +5,18 @@ const $ = require('jquery');
 class Save {
 
 	constructor( options ) {
+		//setup any defaults
+		this.defaults = {};
+		//merge options with defaults
+		this.settings = $.extend( true, {}, this.defaults, options );
+
+		if( $('#bot').length ) {
+			this.setup();
+		}
+
+	}
+
+	setup() {
 
 		const saveBtn = $('#download-file');
 		const shareBtn = $('#share-on-twitter');
@@ -69,7 +81,7 @@ class Save {
 
 					let antenna = $('#antenna-holder');
 					let antennaContents = $('#antenna-holder').html();
-					
+
 					// Need to remove antenna for export, display none doesnt work
 					if( $('#bot').hasClass('hide-antenna') ) {
 						antenna.empty();

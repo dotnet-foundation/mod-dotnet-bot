@@ -9,7 +9,11 @@ class Objects {
 		this.defaults = {};
 		//merge options with defaults
 		this.settings = $.extend( true, {}, this.defaults, options );
-		this.setup();
+
+		if( $('#bot').length ) {
+			this.setup();
+		}
+
 	}
 
 	setup() {
@@ -18,10 +22,8 @@ class Objects {
 		const bot = $('#bot');
 		const object = $('.object');
 
-		// set gradient IDs
-		//$(window).load(function(){
 		$(document).ready(function(){
-
+			// set gradient IDs
 			$('.object svg *[id]').each(function(){
 				let el = $(this);
 				let number = el.attr('id');
@@ -37,18 +39,15 @@ class Objects {
 				});
 			});
 
-			console.log('ready');
+			//console.log('ready');
 			// Set default objects
 			let defaultObjects = $('.object--default');
 			defaultObjects.each(function(){
 				let el = $(this);
 				el.click();
 			});
-				console.log(defaultObjects.length);
-
+			//console.log(defaultObjects.length);
 		});
-
-
 
 		object.click(function(){
 			let obj = $(this),

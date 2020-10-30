@@ -224,10 +224,12 @@ class Save {
 			})
 			.then((res) => res.json())
 			.then((data) => {
-				console.log('el response = ' + JSON.stringify(data.success));
-				console.log('Admin authorized, now authorizing user');
-				var herokuToken = data.success.oauth_token;
-				var url = 'https://twitter.com/oauth/authenticate?oauth_token=' + herokuToken;
+				console.log('Response = ' + JSON.stringify(data.success));
+				// console.log(data.tokenResponse.oAuthToken);
+				// console.log('Admin authorized, now authorizing user');
+
+				var tweetToken = data.tokenResponse.oAuthToken;
+				var url = 'https://twitter.com/oauth/authenticate?oauth_token=' + tweetToken;
 				var callbackUrl = window.location.origin + '/close';
 				//var login = window.open(url, "_blank", "width=400,height=400,status=yes");
 
@@ -244,9 +246,9 @@ class Save {
 				// listen for message back from child window
 				window.addEventListener('message',function(event) {
 					//if(event.origin !== '') return;
-					console.log('Response from child:  ', event.data);
-					if (event.data[0] === herokuToken) {
-						console.log('Tokens match');
+					//console.log('Response from child:  ', event.data);
+					if (event.data[0] === tweetToken) {
+						//console.log('Tokens match');
 						clearInterval(credsCheck);
 						loginWindow.close();
 						previewTweet(event.data[0], event.data[1]);

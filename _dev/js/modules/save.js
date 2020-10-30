@@ -190,9 +190,11 @@ class Save {
 			tp.removeClass('d-none');
 		}
 
-
+		$('#tweet').click(function(){
+			postToTwitter();
+		});
 		function postToTwitter() {
-			console.log('tweet image');
+			console.log('start tweet process');
 
 			let tp = $('#tweet-preview');
 

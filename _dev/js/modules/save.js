@@ -192,22 +192,12 @@ class Save {
 		}
 
 		var loginWindow;
-		$('#tweet').click(function(e){
-			e.preventDefault();
-			loginWindow = window.open('', "_blank", "width=400,height=400,status=yes,menubar=no,titlebar=no,toolbar=no,location=no");
-			postToTwitter();
-		});
-
-		let tp = $('#tweet-preview');
 
 		function postToTwitter() {
+
+			$('#share-modal .modal').addClass('is-working');
 			console.log('start tweet process');
 			loginWindow = window.open('', "_blank", "width=400,height=400,status=yes,menubar=no,titlebar=no,toolbar=no,location=no");
-			$('#tweet-preview').addClass('is-working');
-
-			let tp = $('#tweet-preview');
-
-			tp.removeClass('d-none');
 
 			//$('#img').removeClass('d-none');
 
@@ -268,6 +258,7 @@ class Save {
 				function previewTweet(auth, veri) {
 					console.log("Preview Tweet");
 
+					$('#share-modal .modal').removeClass('is-working');
 					$('#tweet-preview').removeClass('d-none');
 
 					//exportModal.classList.add('previewing');

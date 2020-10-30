@@ -1,0 +1,28 @@
+---
+layout: default
+title: Getting Twitter Permissions
+id: close-window
+permalink: /close/
+---
+
+
+<script>
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+    var response = [getUrlParameter('oauth_token'), getUrlParameter('oauth_verifier')];
+
+    //console.log('URL Reponse = ' + response);
+
+    window.addEventListener('message', function(event) {
+        if( response[0] === undefined || response[0] === ''  || response.length == 0 ) {
+            event.source.postMessage('nothing', event.origin);
+        } else {
+            event.source.postMessage(response, event.origin);
+        }
+    },false);
+</script>

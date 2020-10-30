@@ -217,19 +217,27 @@ permalink: /create-your-bot/
 
 
       <div class="mt-4 d-none" id="tweet-preview">
-        <img id="tweetPreviewImg" src=""/>
-        <input id="twitter-image" type="hidden" value="" />
-        <textarea id="tweet-text" class="d-block" maxlength="280">I created my own #dotnet-bot mod. Create your own at mod-dotnet-bot.net. #dotnetlovesme</textarea>
+        <div class="tweet-content">
+          <img id="tweetPreviewImg" src=""/>
+          <input id="twitter-image" type="hidden" value="" />
+          <textarea id="tweet-text" class="d-block" maxlength="280">I created my own #dotnet-bot mod. Create your own at mod-dotnet-bot.net. #dotnetlovesme</textarea>
 
-        <div class="d-flex flex-items-start flex-justify-between mt-3">
-          <button class="btn btn--sm btn--alt btn--wide" type="submit" id="tweet">Post to twitter</button>
-          <span class="tweet-char-count"><span id="tweet-text-count"></span>/280</span>
+          <div class="d-flex flex-items-start flex-justify-between mt-3">
+            <button class="btn btn--sm btn--alt btn--wide" type="submit" id="tweet">Post to twitter</button>
+            <span class="tweet-char-count"><span id="tweet-text-count"></span>/280</span>
+          </div>
         </div>
+
 
         <!-- <a class="ui-icon ui-icon--sm keep-editing" href="">
           <img src="/assets/images/svgs/close.svg" alt="Mail icon" />
           <span class="sr-only">Keep Editing</span>
         </a> -->
+
+        <div class="tweet-success">
+          <p class="h4 text-brand mb-2">Success!</p>
+          <p class="m-0">Your dotnet-bot mod has been posted.</p>
+        </div>
       </div>
 
       <div class="checkbox mt-6">

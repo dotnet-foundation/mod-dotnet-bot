@@ -18,6 +18,8 @@ class Save {
 
 	setup() {
 
+		console.log(window.location.origin);
+
 		const saveBtn = $('#download-file');
 		const shareBtn = $('#share-on-twitter');
 		const shareModal = $('#share-modal');
@@ -201,6 +203,8 @@ class Save {
 		function postToTwitter() {
 			console.log('start tweet process');
 
+			$('#tweet-preview').addClass('is-working');
+
 			let tp = $('#tweet-preview');
 
 			tp.removeClass('d-none');
@@ -275,13 +279,8 @@ class Save {
 
 
 				function callback(auth, veri, text) {
-
 					//exportModal.classList.remove('previewing');
-
 					var postUrl = 'https://create-dotnet-bot.azurewebsites.net/api/tweet';
-					// if( window.location.hostname === '127.0.0.1' ) {
-					// 	postUrl = 'http://localhost:4000/auth';
-					// }
 					window.fetch(postUrl, {
 						method:'POST',
 						headers: {
@@ -302,6 +301,8 @@ class Save {
 							setTimeout(function(){
 								// exportModal.classList.remove('posting');
 								// exportModal.classList.add('completed');
+								$('#tweet-preview').removeClass('is-working');
+								$('#tweet-preview').addClass('success');
 								sendToAws(false);
 								//TweenMax.to(svgMaskLoad, 1, { scaleY: 1}).delay(1);
 								var url = data.url,

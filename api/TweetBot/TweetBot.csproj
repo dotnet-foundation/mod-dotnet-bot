@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+    <UserSecretsId>d62d89d9-e37b-4c2e-9fce-cfab85445c46</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+	  <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.15.0" />
+	  <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+	  <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.3.*" />
+	  <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.9" />
+	  <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Twilio" Version="3.0.0" />
+	  <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="4.0.3" />
+	  <PackageReference Include="TweetinviAPI" Version="5.0.2" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>

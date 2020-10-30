@@ -188,7 +188,7 @@ class Save {
 
 		function tweetImg() {
 			console.log('tweet image');
-
+			postToTwitter();
 		}
 
 		var loginWindow;
@@ -200,10 +200,9 @@ class Save {
 
 		let tp = $('#tweet-preview');
 
-
 		function postToTwitter() {
 			console.log('start tweet process');
-
+			loginWindow = window.open('', "_blank", "width=400,height=400,status=yes,menubar=no,titlebar=no,toolbar=no,location=no");
 			$('#tweet-preview').addClass('is-working');
 
 			let tp = $('#tweet-preview');

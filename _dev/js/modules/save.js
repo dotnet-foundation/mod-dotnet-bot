@@ -180,8 +180,6 @@ class Save {
 			return binArray;
 		}
 
-
-
 		function downloadImg() {
 			console.log('download image');
 		}
@@ -190,7 +188,6 @@ class Save {
 			console.log('tweet image');
 			let tp = $('#tweet-preview');
 			tp.removeClass('d-none');
-
 		}
 
 
@@ -208,12 +205,8 @@ class Save {
 
 			TweenMax.to(svgMaskLoad, 10, { scaleY: 0.3, transformOrigin:"top center",ease: Power4.easeOut }).delay(0.4);
 			exportModal.classList.add('posting');
-			//console.log(window.location.hostname);
 
-			var postUrl = 'https://octocat-generator.herokuapp.com/auth';
-			if( window.location.hostname === '127.0.0.1' ) {
-				postUrl = 'http://localhost:4000/';
-			}
+			var postUrl = 'https://create-dotnet-bot.azurewebsites.net/api/auth';
 			window.fetch(postUrl, {
 				method:'POST',
 				headers: {
@@ -224,8 +217,8 @@ class Save {
 			})
 			.then((res) => res.json())
 			.then((data) => {
-				//console.log('el response = ' + JSON.stringify(data.success));
-				//console.log('Admin authorized, now authorizing user');
+				console.log('el response = ' + JSON.stringify(data.success));
+				console.log('Admin authorized, now authorizing user');
 				var herokuToken = data.success.oauth_token;
 				var url = 'https://twitter.com/oauth/authenticate?oauth_token=' + herokuToken;
 				var callbackUrl = window.location.origin + '/close';
@@ -236,7 +229,7 @@ class Save {
 				// Send message to child window and check for twitter tokens
 				function childRequest() {
 					var message = 'Checking for tokens...';
-					//console.log('Sending message: ' + message);
+					console.log('Sending message: ' + message);
 					loginWindow.postMessage(message, callbackUrl); //send the message and target URI
 				}
 				var credsCheck = setInterval(childRequest, 2000);
@@ -244,9 +237,9 @@ class Save {
 				// listen for message back from child window
 				window.addEventListener('message',function(event) {
 					//if(event.origin !== '') return;
-					//console.log('Response from child:  ', event.data);
+					console.log('Response from child:  ', event.data);
 					if (event.data[0] === herokuToken) {
-						//console.log('Tokens match');
+						console.log('Tokens match');
 						clearInterval(credsCheck);
 						loginWindow.close();
 						previewTweet(event.data[0], event.data[1]);
@@ -276,10 +269,10 @@ class Save {
 
 					exportModal.classList.remove('previewing');
 
-					var postUrl = 'https://octocat-generator.herokuapp.com/tweet';
-					if( window.location.hostname === '127.0.0.1' ) {
-						postUrl = 'http://localhost:4000/auth';
-					}
+					var postUrl = 'https://create-dotnet-bot.azurewebsites.net/api/tweet';
+					// if( window.location.hostname === '127.0.0.1' ) {
+					// 	postUrl = 'http://localhost:4000/auth';
+					// }
 					window.fetch(postUrl, {
 						method:'POST',
 						headers: {
@@ -290,10 +283,10 @@ class Save {
 					}).then((res) => res.json())
 					.then((data) => {
 
-						// console.log('++++++++++++++++++');
-						// console.log('response = ' + JSON.stringify(data.success));
-						// console.log('response = ' + JSON.stringify(data.msg));
-						// console.log('++++++++++++++++++');
+						console.log('++++++++++++++++++');
+						console.log('response = ' + JSON.stringify(data.success));
+						console.log('response = ' + JSON.stringify(data.msg));
+						console.log('++++++++++++++++++');
 
 						if( data.success === true ){
 							TweenMax.to(svgMaskLoad, 2, { scaleY: 0, transformOrigin:"top center", ease: Power0.easeNone }).delay(1.4);
@@ -308,7 +301,7 @@ class Save {
 
 						} else {
 							setTimeout(function(){
-								//console.log('There was an issue');
+								console.log('There was an issue');
 								exportModal.classList.remove('posting');
 								exportModal.classList.add('error');
 							}, 4300);
@@ -322,7 +315,6 @@ class Save {
 			var svgAsXML = (new XMLSerializer).serializeToString(svg);
 			return "data:image/svg+xml," + encodeURIComponent(svgAsXML);
 		}
-
 
 		const tweetText = document.getElementById('tweet-text');
     const charCount = document.getElementById('tweet-text-count');

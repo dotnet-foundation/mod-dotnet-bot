@@ -188,8 +188,7 @@ class Save {
 
 		function tweetImg() {
 			console.log('tweet image');
-			let tp = $('#tweet-preview');
-			tp.removeClass('d-none');
+
 		}
 
 		var loginWindow;
@@ -198,6 +197,8 @@ class Save {
 			loginWindow = window.open('', "_blank", "width=400,height=400,status=yes,menubar=no,titlebar=no,toolbar=no,location=no");
 			postToTwitter();
 		});
+
+		let tp = $('#tweet-preview');
 
 
 		function postToTwitter() {
@@ -266,7 +267,9 @@ class Save {
 
 
 				function previewTweet(auth, veri) {
-					//console.log("Preview Tweet");
+					console.log("Preview Tweet");
+
+					$('#tweet-preview').removeClass('d-none');
 
 					//exportModal.classList.add('previewing');
 
@@ -279,6 +282,7 @@ class Save {
 
 
 				function callback(auth, veri, text) {
+					$('#tweet-preview').addClass('is-working');
 					//exportModal.classList.remove('previewing');
 					var postUrl = 'https://create-dotnet-bot.azurewebsites.net/api/tweet';
 					window.fetch(postUrl, {

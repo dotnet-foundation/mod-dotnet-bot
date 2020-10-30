@@ -136,7 +136,7 @@ class Save {
 
 						// Add image data to form input field
 						document.getElementById('image-file').value = imgData;
-
+						document.getElementById('twitter-image').value = imgData;
 						//console.log(imgData);
 
 						//if(emailObject) {
@@ -190,9 +190,14 @@ class Save {
 			tp.removeClass('d-none');
 		}
 
-		$('#tweet').click(function(){
+		var loginWindow;
+		$('#tweet').click(function(e){
+			e.preventDefault();
+			loginWindow = window.open('', "_blank", "width=400,height=400,status=yes,menubar=no,titlebar=no,toolbar=no,location=no");
 			postToTwitter();
 		});
+
+
 		function postToTwitter() {
 			console.log('start tweet process');
 
@@ -205,8 +210,8 @@ class Save {
 			var form = document.getElementById("share-on-twitter");
 			var mediab64 = document.getElementById('twitter-image').value;
 
-			TweenMax.to(svgMaskLoad, 10, { scaleY: 0.3, transformOrigin:"top center",ease: Power4.easeOut }).delay(0.4);
-			exportModal.classList.add('posting');
+			//TweenMax.to(svgMaskLoad, 10, { scaleY: 0.3, transformOrigin:"top center",ease: Power4.easeOut }).delay(0.4);
+			//exportModal.classList.add('posting');
 
 			var postUrl = 'https://create-dotnet-bot.azurewebsites.net/api/auth';
 			window.fetch(postUrl, {
@@ -248,8 +253,8 @@ class Save {
 					} else {
 						clearInterval(credsCheck);
 						loginWindow.close();
-						exportModal.classList.remove('posting');
-						exportModal.classList.add('error');
+						// exportModal.classList.remove('posting');
+						// exportModal.classList.add('error');
 					}
 				},false);
 
@@ -257,7 +262,7 @@ class Save {
 				function previewTweet(auth, veri) {
 					//console.log("Preview Tweet");
 
-					exportModal.classList.add('previewing');
+					//exportModal.classList.add('previewing');
 
 					document.getElementById('tweet').onclick = function(e) {
 						e.preventDefault();
@@ -269,7 +274,7 @@ class Save {
 
 				function callback(auth, veri, text) {
 
-					exportModal.classList.remove('previewing');
+					//exportModal.classList.remove('previewing');
 
 					var postUrl = 'https://create-dotnet-bot.azurewebsites.net/api/tweet';
 					// if( window.location.hostname === '127.0.0.1' ) {
@@ -291,12 +296,12 @@ class Save {
 						console.log('++++++++++++++++++');
 
 						if( data.success === true ){
-							TweenMax.to(svgMaskLoad, 2, { scaleY: 0, transformOrigin:"top center", ease: Power0.easeNone }).delay(1.4);
+							//TweenMax.to(svgMaskLoad, 2, { scaleY: 0, transformOrigin:"top center", ease: Power0.easeNone }).delay(1.4);
 							setTimeout(function(){
-								exportModal.classList.remove('posting');
-								exportModal.classList.add('completed');
+								// exportModal.classList.remove('posting');
+								// exportModal.classList.add('completed');
 								sendToAws(false);
-								TweenMax.to(svgMaskLoad, 1, { scaleY: 1}).delay(1);
+								//TweenMax.to(svgMaskLoad, 1, { scaleY: 1}).delay(1);
 								var url = data.url,
 								params = data.params;
 							}, 2300);
@@ -304,8 +309,8 @@ class Save {
 						} else {
 							setTimeout(function(){
 								console.log('There was an issue');
-								exportModal.classList.remove('posting');
-								exportModal.classList.add('error');
+								// exportModal.classList.remove('posting');
+								// exportModal.classList.add('error');
 							}, 4300);
 						}
 					})

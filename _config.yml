@@ -1,6 +1,6 @@
 # Welcome to Jekyll!
 #
-title: Creat your own coding companion
+title: Create your own coding companion
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Coding is better with friends, especially when they bring their own mods. As the mascot for the .NET community, dotnet-bot helps with checking pull requests on .NET repos on GitHub. Create your own custom coding companion by modding the dotnet-bot.

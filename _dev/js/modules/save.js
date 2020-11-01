@@ -18,7 +18,7 @@ class Save {
 
 	setup() {
 
-		console.log(window.location.origin);
+		console.log('here');
 
 		const saveBtn = $('#download-file');
 		const shareBtn = $('#share-on-twitter');
@@ -221,7 +221,7 @@ class Save {
 				console.log('Response = ' + JSON.stringify(data.success));
 				// console.log(data.tokenResponse.oAuthToken);
 				// console.log('Admin authorized, now authorizing user');
-
+				console.log('token data = ' + data);
 				var tweetToken = data.tokenResponse.oAuthToken;
 				var url = 'https://twitter.com/oauth/authenticate?oauth_token=' + tweetToken;
 				var callbackUrl = window.location.origin + '/close';
@@ -246,6 +246,7 @@ class Save {
 						clearInterval(credsCheck);
 						loginWindow.close();
 						previewTweet(event.data[0], event.data[1]);
+						console.log('data from close = ' + event.data[0] + ' and ' + event.data[1]);
 					} else {
 						clearInterval(credsCheck);
 						loginWindow.close();
@@ -281,13 +282,13 @@ class Save {
 							'Accept': 'application/json, text/plain, */*',
 							'Content-type':'application/json'
 						},
-						body:JSON.stringify({oauth_token: auth, oauth_token_secret: data.success.oauth_token_secret, oauth_verifier: veri, media_id: mediab64, tweetText: text})
+						body:JSON.stringify({oauth_token: auth, oauth_token_secret: data.tokenResponse.oAuthToken, oauth_verifier: veri, media_id: mediab64, tweetText: text})
 					}).then((res) => res.json())
 					.then((data) => {
 
 						console.log('++++++++++++++++++');
-						console.log('response = ' + JSON.stringify(data.success));
-						console.log('response = ' + JSON.stringify(data.msg));
+						console.log('response = ' + JSON.stringify(data));
+						//console.log('response = ' + JSON.stringify(data.msg));
 						console.log('++++++++++++++++++');
 
 						if( data.success === true ){

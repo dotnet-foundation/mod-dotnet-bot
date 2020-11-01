@@ -17,9 +17,6 @@ class Save {
 	}
 
 	setup() {
-
-		console.log('here');
-
 		const saveBtn = $('#download-file');
 		const shareBtn = $('#share-on-twitter');
 		const shareModal = $('#share-modal');
@@ -221,7 +218,8 @@ class Save {
 				console.log('Response = ' + JSON.stringify(data.success));
 				// console.log(data.tokenResponse.oAuthToken);
 				// console.log('Admin authorized, now authorizing user');
-				console.log('token data = ' + data);
+				console.log(data);
+				console.log('vv')
 				var tweetToken = data.tokenResponse.oAuthToken;
 				var url = 'https://twitter.com/oauth/authenticate?oauth_token=' + tweetToken;
 				var callbackUrl = window.location.origin + '/close';
@@ -282,7 +280,7 @@ class Save {
 							'Accept': 'application/json, text/plain, */*',
 							'Content-type':'application/json'
 						},
-						body:JSON.stringify({oauth_token: auth, oauth_token_secret: data.tokenResponse.oAuthToken, oauth_verifier: veri, media_id: mediab64, tweetText: text})
+						body:JSON.stringify({oauth_token: auth, oauth_token_secret: data.tokenResponse.oAuthTokenSecret, oauth_verifier: veri, media_id: mediab64, tweetText: text})
 					}).then((res) => res.json())
 					.then((data) => {
 

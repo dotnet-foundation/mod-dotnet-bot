@@ -276,12 +276,8 @@ class Save {
 
 						if( data.success === true ){
 							setTimeout(function(){
-								// exportModal.classList.remove('posting');
-								// exportModal.classList.add('completed');
 								$('#tweet-preview').removeClass('is-working');
 								$('#share-modal').addClass('success');
-								sendToAws(false);
-								//TweenMax.to(svgMaskLoad, 1, { scaleY: 1}).delay(1);
 								var url = data.url,
 								params = data.params;
 							}, 2300);
@@ -289,8 +285,8 @@ class Save {
 						} else {
 							setTimeout(function(){
 								console.log('There was an issue');
-								// exportModal.classList.remove('posting');
-								// exportModal.classList.add('error');
+								$('#tweet-preview').removeClass('is-working');
+								$('#share-modal').addClass('error');
 							}, 4300);
 						}
 					})

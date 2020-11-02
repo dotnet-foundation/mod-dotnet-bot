@@ -80,7 +80,8 @@
 
 #share-modal {
 
-  .tweet-success {
+  .tweet-success,
+  .tweet-error {
     display: none;
   }
 
@@ -92,7 +93,22 @@
     .modal__content {
       display: none;
     }
+
+    &#tweet-preview {
+      display: none;
+    }
   }
+
+  &.error {
+    .tweet-error {
+      display: block;
+    }
+
+    .modal__content {
+      display: none;
+    }
+  }
+
 }
 
 

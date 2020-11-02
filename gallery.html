@@ -17,7 +17,7 @@ permalink: /gallery/
     {% for image in site.data.gallery %}
     {% capture img %}/assets/images/gallery/{{ image.image }}{% endcapture %}
     <figure data-animate-in="up">
-      <img src="{{ img | relative_url }}" alt="{{ image.alt }}" />
+      <img src="{{ img | relative_url }}" alt="{% if image.alt %}{{ image.alt }}{% else %}Modded dotnet bot{% endif %}" />
     </figure>
     {% endfor %}
 

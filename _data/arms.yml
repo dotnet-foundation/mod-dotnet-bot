@@ -1,56 +1,56 @@
 - title: Original bot arms
   default: true
-  icon: dotnet-bot-arms_original.svg
+  icon: original.svg
   file: dotnet-bot-arms_original.svg
 
 - title: Claw hands
-  icon: dotnet-bot-arms_claw.svg
+  icon: claw.svg
   file: dotnet-bot-arms_claw.svg
 
 - title: clown arms
-  icon: dotnet-bot-arms_clown.svg
+  icon: clown.svg
   file: dotnet-bot-arms_clown.svg
 
 - title: Construction arms
-  icon: dotnet-bot-arms_construction.svg
+  icon: construction.svg
   file: dotnet-bot-arms_construction.svg
 
 - title: Cowboy arms
-  icon: dotnet-bot-arms_cowboy.svg
+  icon: cowboy.svg
   file: dotnet-bot-arms_cowboy.svg
 
 - title: Doctor arms
-  icon: dotnet-bot-arms_doctor.svg
+  icon: doctor.svg
   file: dotnet-bot-arms_doctor.svg
 
 - title: Knight arms
-  icon: dotnet-bot-arms_dungeons.svg
+  icon: dungeons.svg
   file: dotnet-bot-arms_dungeons.svg
 
 - title: Gravity trap hands
-  icon: dotnet-bot-arms_grav-trap.svg
+  icon: grav-trap.svg
   file: dotnet-bot-arms_grav-trap.svg
 
 - title: Skateboard
-  icon: dotnet-bot-arms_skateboard.svg
+  icon: skateboard.svg
   file: dotnet-bot-arms_skateboard.svg
 
 - title: Skiing
-  icon: dotnet-bot-arms_skiing.svg
+  icon: skiing.svg
   file: dotnet-bot-arms_skiing.svg
 
 - title: Snorkel camera
-  icon: dotnet-bot-arms_snorkel-camera.svg
+  icon: snorkel-camera.svg
   file: dotnet-bot-arms_snorkel-camera.svg
 
 - title: Snowboard arms
-  icon: dotnet-bot-arms_snowboard.svg
+  icon: snowboard.svg
   file: dotnet-bot-arms_snowboard.svg
 
 - title: Space arms
-  icon: dotnet-bot-arms_space.svg
+  icon: space.svg
   file: dotnet-bot-arms_space.svg
 
 - title: Wizard arms
-  icon: dotnet-bot-arms_wizard.svg
+  icon: wizard.svg
   file: dotnet-bot-arms_wizard.svg

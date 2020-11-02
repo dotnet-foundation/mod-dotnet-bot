@@ -187,10 +187,18 @@ class Save {
 			postToTwitter();
 		}
 
-		var loginWindow;
+
+			var loginWindow;
+
+		$('.js-stop-tweet').click(function(){
+			$('#share-modal').removeClass('is-working');
+			loginWindow.close();
+		});
+
+
 
 		function postToTwitter() {
-			$('#share-modal .modal').addClass('is-working');
+			$('#share-modal').addClass('is-working');
 			//console.log('start tweet process');
 			loginWindow = window.open('', "_blank", "width=400,height=400,status=yes,menubar=no,titlebar=no,toolbar=no,location=no");
 			const form = document.getElementById("share-on-twitter");
@@ -224,6 +232,8 @@ class Save {
 				}
 				var credsCheck = setInterval(childRequest, 2000);
 
+
+
 				// listen for message back from child window
 				window.addEventListener('message',function(event) {
 					//if(event.origin !== '') return;
@@ -245,7 +255,7 @@ class Save {
 
 				function previewTweet(auth, veri) {
 					//console.log("Preview Tweet");
-					$('#share-modal .modal').removeClass('is-working');
+					$('#share-modal').removeClass('is-working');
 					$('#tweet-preview').removeClass('d-none');
 					document.getElementById('tweet').onclick = function(e) {
 						e.preventDefault();

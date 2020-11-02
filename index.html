@@ -67,10 +67,10 @@ title: Create your own coding companion
 
   <div class="container-md gallery">
 
-    {% for image in site.data.gallery %}
+    {% for image in site.data.gallery limit:9 %}
     {% capture img %}/assets/images/gallery/{{ image.image }}{% endcapture %}
     <figure data-animate-in="up">
-      <img src="{{ img | relative_url }}" alt="{{ image.alt }}" />
+      <img src="{{ img | relative_url }}" alt="{% if image.alt %}{{ image.alt }}{% else %}Modded dotnet bot{% endif %}" />
     </figure>
     {% endfor %}
 

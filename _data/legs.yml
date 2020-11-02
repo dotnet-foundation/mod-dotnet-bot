@@ -1,48 +1,48 @@
 - title: Original legs
   default: true
-  icon: dotnet-bot-legs_original.svg
+  icon: original.svg
   file: dotnet-bot-legs_original.svg
 
 - title: Swim fins
-  icon: dotnet-bot-legs_swim_fins.svg
+  icon: swim-fins.svg
   file: dotnet-bot-legs_swim_fins.svg
 
 - title: Clown legs
-  icon: dotnet-bot-legs_clown.svg
+  icon: clown.svg
   file: dotnet-bot-legs_clown.svg
 
 - title: Construction legs
-  icon: dotnet-bot-legs_construction.svg
+  icon: construction.svg
   file: dotnet-bot-legs_construction.svg
 
 - title: Cowboy boots
-  icon: dotnet-bot-legs_cowboy-boots.svg
+  icon: cowboy-boots.svg
   file: dotnet-bot-legs_cowboy-boots.svg
 
 - title: Doctor booties
-  icon: dotnet-bot-legs_doctor-booties.svg
+  icon: doctor-booties.svg
   file: dotnet-bot-legs_doctor-booties.svg
 
 - title: Knight legs
-  icon: dotnet-bot-legs_dungeon.svg
+  icon: dungeon.svg
   file: dotnet-bot-legs_dungeon.svg
 
 - title: legs on Skateboard
-  icon: dotnet-bot-legs_skateboard.svg
+  icon: skateboard.svg
   file: dotnet-bot-legs_skateboard.svg
 
 - title: legs on skis
-  icon: dotnet-bot-legs_skiis.svg
+  icon: skis.svg
   file: dotnet-bot-legs_skiis.svg
 
 - title: legs on snowboard
-  icon: dotnet-bot-legs_snowboard.svg
+  icon: snowboard.svg
   file: dotnet-bot-legs_snowboard.svg
 
 - title: Space legs
-  icon: dotnet-bot-legs_space.svg
+  icon: space.svg
   file: dotnet-bot-legs_space.svg
 
 - title: Steam roller legs
-  icon: dotnet-bot-legs_steam-roller.svg
+  icon: steam-roller.svg
   file: dotnet-bot-legs_steam-roller.svg

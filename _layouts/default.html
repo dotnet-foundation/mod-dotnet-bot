@@ -9,7 +9,8 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link rel="stylesheet" media="screen" href="{{ '/assets/css/main.css' | relative_url }}" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-  {% seo %}
+  <title>{{ page.title }}</title>
+  {% seo title=false %}
   <link id="favicon" rel="shortcut icon" type="image/ico" href="{{ '/assets/images/favicons/favicon.png' | relative_url }}" />
   <link rel="apple-touch-icon" href="{{ '/assets/images/favicons/apple-touch-icon.png' | relative_url }}" />
   <link rel="icon" href="{{ '/assets/images/favicons/android-favicon.png' | relative_url }}">

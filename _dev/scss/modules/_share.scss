@@ -78,6 +78,23 @@
   }
 }
 
+#share-modal {
+
+  .tweet-success {
+    display: none;
+  }
+
+  &.success {
+    .tweet-success {
+      display: block;
+    }
+
+    .modal__content {
+      display: none;
+    }
+  }
+}
+
 
 .is-working {
 

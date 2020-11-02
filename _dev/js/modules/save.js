@@ -24,7 +24,6 @@ class Save {
 		const toggleShare = $('.js-toggle-share');
 		const termsLabel = $('#terms-label');
 		const terms = $('#terms');
-
 		let termsAgreed = localStorage.getItem('modthebotterms');
 
 
@@ -39,13 +38,13 @@ class Save {
 		terms.change(function() {
 		    var ischecked= $(this).is(':checked');
 				if( ischecked ) {
-					console.log('check');
+					//console.log('check');
 					localStorage.setItem('modthebotterms', 'true');
 					shareBtn.removeAttr('disabled');
 					saveBtn.removeAttr('disabled');
 
 				} else {
-					console.log('uncheck');
+					//console.log('uncheck');
 					localStorage.setItem('modthebotterms', 'false');
 					shareBtn.attr('disabled', 'disabled');
 					saveBtn.attr('disabled', 'disabled');
@@ -180,31 +179,23 @@ class Save {
 		}
 
 		function downloadImg() {
-			console.log('download image');
+			//console.log('download image');
 		}
 
 		function tweetImg() {
-			console.log('tweet image');
+			//console.log('tweet image');
 			postToTwitter();
 		}
 
 		var loginWindow;
 
 		function postToTwitter() {
-
 			$('#share-modal .modal').addClass('is-working');
-			console.log('start tweet process');
+			//console.log('start tweet process');
 			loginWindow = window.open('', "_blank", "width=400,height=400,status=yes,menubar=no,titlebar=no,toolbar=no,location=no");
-
-			//$('#img').removeClass('d-none');
-
-			var form = document.getElementById("share-on-twitter");
-			var mediab64 = document.getElementById('twitter-image').value;
-
-			//TweenMax.to(svgMaskLoad, 10, { scaleY: 0.3, transformOrigin:"top center",ease: Power4.easeOut }).delay(0.4);
-			//exportModal.classList.add('posting');
-
-			var postUrl = 'https://create-dotnet-bot.azurewebsites.net/api/auth';
+			const form = document.getElementById("share-on-twitter");
+			const mediab64 = document.getElementById('twitter-image').value;
+			const postUrl = 'https://create-dotnet-bot.azurewebsites.net/api/auth';
 			window.fetch(postUrl, {
 				method:'POST',
 				headers: {
@@ -215,22 +206,20 @@ class Save {
 			})
 			.then((res) => res.json())
 			.then((data) => {
-				console.log('Response = ' + JSON.stringify(data.success));
+				//console.log('Response = ' + JSON.stringify(data.success));
 				// console.log(data.tokenResponse.oAuthToken);
 				// console.log('Admin authorized, now authorizing user');
-				console.log(data);
-				console.log('vv')
-				var tweetToken = data.tokenResponse.oAuthToken;
-				var url = 'https://twitter.com/oauth/authenticate?oauth_token=' + tweetToken;
-				var callbackUrl = window.location.origin + '/close';
+				//console.log(data);
+				//console.log('vv')
+				const tweetToken = data.tokenResponse.oAuthToken;
+				const url = 'https://twitter.com/oauth/authenticate?oauth_token=' + tweetToken;
+				const callbackUrl = window.location.origin + '/close';
 				//var login = window.open(url, "_blank", "width=400,height=400,status=yes");
-
 				loginWindow.location.href = url;
-
 				// Send message to child window and check for twitter tokens
 				function childRequest() {
-					var message = 'Checking for tokens...';
-					console.log('Sending message: ' + message);
+					const message = 'Checking for tokens...';
+					//console.log('Sending message: ' + message);
 					loginWindow.postMessage(message, callbackUrl); //send the message and target URI
 				}
 				var credsCheck = setInterval(childRequest, 2000);
@@ -244,7 +233,7 @@ class Save {
 						clearInterval(credsCheck);
 						loginWindow.close();
 						previewTweet(event.data[0], event.data[1]);
-						console.log('data from close = ' + event.data[0] + ' and ' + event.data[1]);
+						//console.log('data from close = ' + event.data[0] + ' and ' + event.data[1]);
 					} else {
 						clearInterval(credsCheck);
 						loginWindow.close();
@@ -255,13 +244,9 @@ class Save {
 
 
 				function previewTweet(auth, veri) {
-					console.log("Preview Tweet");
-
+					//console.log("Preview Tweet");
 					$('#share-modal .modal').removeClass('is-working');
 					$('#tweet-preview').removeClass('d-none');
-
-					//exportModal.classList.add('previewing');
-
 					document.getElementById('tweet').onclick = function(e) {
 						e.preventDefault();
 						var text = document.getElementById('tweet-text').value;
@@ -284,18 +269,17 @@ class Save {
 					}).then((res) => res.json())
 					.then((data) => {
 
-						console.log('++++++++++++++++++');
-						console.log('response = ' + JSON.stringify(data));
-						//console.log('response = ' + JSON.stringify(data.msg));
-						console.log('++++++++++++++++++');
+						// console.log('++++++++++++++++++');
+						// console.log('response = ' + JSON.stringify(data));
+						// //console.log('response = ' + JSON.stringify(data.msg));
+						// console.log('++++++++++++++++++');
 
 						if( data.success === true ){
-							//TweenMax.to(svgMaskLoad, 2, { scaleY: 0, transformOrigin:"top center", ease: Power0.easeNone }).delay(1.4);
 							setTimeout(function(){
 								// exportModal.classList.remove('posting');
 								// exportModal.classList.add('completed');
 								$('#tweet-preview').removeClass('is-working');
-								$('#tweet-preview').addClass('success');
+								$('#share-modal').addClass('success');
 								sendToAws(false);
 								//TweenMax.to(svgMaskLoad, 1, { scaleY: 1}).delay(1);
 								var url = data.url,

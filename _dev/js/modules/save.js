@@ -91,12 +91,7 @@ class Save {
 					svg  = document.getElementById('bot'),
 					can  = document.getElementById('canvas'),
 					ctx  = can.getContext('2d');
-
 					var scaleFactor = 300 / 96;
-					// can.width = Math.ceil(canvas.width * scaleFactor);
-					// can.height = Math.ceil(canvas.height * scaleFactor);
-
-					//can.style["display"] = "none";
 					can.setAttribute("width", 2000);
 					can.setAttribute("height", 2000);
 
@@ -111,7 +106,6 @@ class Save {
 					sourceImage.onload = function(){
 						//ctx.fillStyle = "#f6f8fa";
 						ctx.fillStyle = "rgba(255, 255, 255, 0)";
-						//ctx.fillRect(0, 0, canvas.width, canvas.height);
 						ctx.fillRect(0, 0, canvas.width, canvas.height);
 						ctx.drawImage(sourceImage,0,0,2000,2000);
 

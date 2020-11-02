@@ -174,8 +174,12 @@
     position: relative;
     z-index: 2;
     font-weight: 600;
+    line-height: 1.5;
     font-size: 14px;
     text-align: center;
+    width: 340px;
+    max-width: 92%;
+    margin: 0 auto;
   }
 
   .js-stop-tweet {

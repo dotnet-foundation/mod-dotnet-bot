@@ -163,6 +163,10 @@
   z-index: 2;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
 
+  svg {
+    display: none;
+  }
+
   > img {
     max-height: 50px;
     max-width: 60px;

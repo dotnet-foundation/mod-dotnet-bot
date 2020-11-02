@@ -31,6 +31,6 @@ defaults:
     scope:
       path: ""
     values:
-      image: assets/img/social-card.png
+      image: assets/images/social-card.png
       layout: default
       is_post: true

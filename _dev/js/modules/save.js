@@ -287,6 +287,7 @@ class Save {
 						if( data.success === true ){
 							setTimeout(function(){
 								$('#tweet-preview').removeClass('is-working');
+								$('#tweet-preview').addClass('d-none');
 								$('#share-modal').addClass('success');
 								var url = data.url,
 								params = data.params;

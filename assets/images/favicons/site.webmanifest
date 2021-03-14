@@ -1,0 +1,13 @@
+{
+    "name": "Mod dotnet-bot",
+    "icons": [
+        {
+            "src": "/assets/images/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#512bd4",
+    "background_color": "#512bd4",
+    "display": "standalone"
+}

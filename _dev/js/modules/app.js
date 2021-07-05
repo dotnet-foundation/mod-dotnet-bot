@@ -39,6 +39,14 @@ class App {
 
 		$(document).ready(function(){
 			$('body').addClass('page-loaded');
+
+			const toggleMenu = $('.header-menu-icon')
+			const menuList = $('.header-menu ul')
+
+			$(toggleMenu).click(function() {
+				$(menuList).slideToggle()
+			})
+
 		});
 
 		setTimeout(function(){

@@ -27,6 +27,7 @@ $intro-bp: $medium;
     img {
       width: 420px;
       max-width: 100%;
+      margin: auto;
     }
 
     @include start-at($intro-bp) {

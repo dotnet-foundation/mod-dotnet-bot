@@ -464,3 +464,40 @@ $logo-height: 72px;
 		}
 	}
 }
+
+.header-menu-icon {
+	cursor: pointer;
+	@include start-at($header-breakpoint){
+		display: none;
+	}
+
+	svg {
+		width: 30px;
+		height: 30px;
+		fill: #ffffff;
+	}
+}
+
+.header-menu {
+	ul {
+		@include stop-at($header-breakpoint){
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			background-color: #512bd4;
+			width: 100%;
+			padding: 0 5% 15px 5%;
+		}
+	}
+
+	li {
+		@include stop-at($header-breakpoint){
+			margin-left: 0 !important;
+			margin-bottom: 8px !important;
+			&:last-child {
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+}

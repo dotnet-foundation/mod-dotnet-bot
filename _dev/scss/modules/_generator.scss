@@ -121,7 +121,6 @@ body {
 }
 
 
-
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -145,7 +144,7 @@ body {
   z-index: 4;
   animation: rotation 2s 5 ease-in-out;
   opacity: 1;
-  transition:opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 
   svg {
     fill: $brand;

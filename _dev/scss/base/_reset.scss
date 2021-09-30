@@ -4,19 +4,19 @@
 // ---------------------------------------------------------------------
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 
-    &:before,
-    &:after {
-        box-sizing: border-box;
-    }
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
 }
 
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
 
 // ----------------------------------------
@@ -26,7 +26,7 @@ ol, ul {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, main,
 audio, canvas, video {
-    display: block;
-    margin: 0;
-	padding: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
 }

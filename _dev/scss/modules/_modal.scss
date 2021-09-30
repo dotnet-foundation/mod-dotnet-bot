@@ -29,7 +29,7 @@ $speaker-breakpoint: $large;
     width: 100%;
     height: 100%;
     z-index: -2;
-  	background: rgba(51, 51, 51, 0.6);
+    background: rgba(51, 51, 51, 0.6);
 
     &:hover {
       cursor: crosshair;
@@ -58,7 +58,7 @@ $speaker-breakpoint: $large;
   overflow: auto;
   background: $white;
   padding: 36px 24px;
-	z-index: 3;
+  z-index: 3;
 
   @include start-at($medium) {
     padding: 50px 50px;
@@ -94,7 +94,6 @@ body.modal-is-active {
     fill: $gray-dark;
     transition: fill $trans;
   }
-
 
 
   &:hover svg {

@@ -38,7 +38,7 @@
 
 .h2,
 .user-content h2 {
-    @include h2;
+  @include h2;
 }
 
 @mixin h3 {
@@ -57,7 +57,7 @@
 
 .h3,
 .user-content h3 {
-    @include h3;
+  @include h3;
 }
 
 
@@ -77,15 +77,15 @@
 .h4,
 .user-content h4,
 .h4-alt {
-    @include h4;
+  @include h4;
 }
 
-.h4-alt  {
-    font-size: 16px !important;
+.h4-alt {
+  font-size: 16px !important;
 
-    @include start-at($medium) {
-        font-size: 20px !important;
-    }
+  @include start-at($medium) {
+    font-size: 20px !important;
+  }
 }
 
 
@@ -104,7 +104,7 @@
 
 .h5,
 .user-content h5 {
-    @include h5;
+  @include h5;
 }
 
 
@@ -123,7 +123,7 @@
 
 .h6,
 .user-content h6 {
-    @include h6;
+  @include h6;
 }
 
 
@@ -152,6 +152,7 @@
 p,
 .user-content p {
   @include para;
+
   a {
     color: $brand;
     text-decoration: underline;
@@ -167,37 +168,34 @@ p,
 .p-sm,
 small,
 .user-content .p-sm {
-    @include para;
-    font-size: 14px;
-    color: $gray-400;
+  @include para;
+  font-size: 14px;
+  color: $gray-400;
 }
 
 
-
 @mixin p-lg {
-    display: block;
-    font-family: $mono;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    margin-bottom: 24px;
+  display: block;
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
 
-    @include start-at($medium) {
-        font-size: 18px;
-    }
+  @include start-at($medium) {
+    font-size: 18px;
+  }
 
-    // @include start-at($large) {
-    //     font-size: 20px;
-    // }
+  // @include start-at($large) {
+  //     font-size: 20px;
+  // }
 }
 
 .p-lg,
 .user-content p.p-lg {
-    @include p-lg;
+  @include p-lg;
 }
-
-
 
 
 // ----------------------------------------
@@ -207,9 +205,11 @@ small,
 .font-weight-400 {
   font-weight: 400 !important;
 }
+
 .font-weight-600 {
   font-weight: 600 !important;
 }
+
 .font-weight-700 {
   font-weight: 700 !important;
 }

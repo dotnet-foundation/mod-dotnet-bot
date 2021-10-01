@@ -58,13 +58,11 @@ $small: 544px;
 // $xl: 1280px;
 
 
-
 @mixin start-at($device-width) {
   @media (min-width: $device-width) {
     @content;
   }
 }
-
 
 
 @mixin stop-at($device-width) {
@@ -86,7 +84,7 @@ $transition-speed: 0.4s;
 $transition: $transition-speed ease-in-out;
 // cuz I no type good
 $trans: $transition-speed ease-in-out;
-$bounce: cubic-bezier(0.68,-0.25,0.27,1.25);
+$bounce: cubic-bezier(0.68, -0.25, 0.27, 1.25);
 
 $wrapper-percentage: 90%;
 $wrapper-width: 1440px;

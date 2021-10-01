@@ -76,6 +76,7 @@
     .tweet-content {
       display: none;
     }
+
     .tweet-success {
       display: block;
     }
@@ -243,7 +244,7 @@
       transition: color $trans;
 
       &:hover {
-          color: lighten($brand, 12%);
+        color: lighten($brand, 12%);
       }
     }
 

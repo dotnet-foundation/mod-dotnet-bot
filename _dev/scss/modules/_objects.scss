@@ -10,7 +10,7 @@
   overflow: hidden;
   border: 1px solid $border;
   width: 100%;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
   margin: 0 12px;
   -webkit-backface-visibility: hidden;
 
@@ -48,13 +48,14 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
   &::-moz-scrollbar {
     display: none;
   }
 
   &::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0px; /* remove scrollbar space */
+    background: transparent; /* optional: just make scrollbar invisible */
     background: red;
     height: 2px;
     background: $gray-light;
@@ -109,6 +110,7 @@
   left: 0;
   border-right: 1px solid $border;
 }
+
 .arrow-next {
   right: 0;
   border-left: 1px solid $border;
@@ -162,7 +164,7 @@
   position: relative;
   z-index: 2;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
-  
+
   svg {
     display: none;
   }

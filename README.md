@@ -12,7 +12,7 @@ The source code is licenced under [MIT](LICENSE). The dotnet-bot illustrations i
 
 ## Installation
 1. Clone repo: `git clone https://github.com/dotnet-foundation/mod-dotnet-bot.git [your-project-folder]`
-2. Install (Jekyll)[https://jekyllrb.com/]: `bundle install`
+2. Install [Jekyll](https://jekyllrb.com/): `bundle install`
 3. Install npm dependencies: `npm install`
 4. Start jekyll: `bundle exec jekyll serve`
 5. Site should be accessible at `http://127.0.0.1:4000`

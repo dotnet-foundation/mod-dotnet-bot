@@ -9,10 +9,14 @@ If you found a bug or want to request new parts for the dotnet-bot, submit an is
 
 The source code is licenced under [MIT](LICENSE). The dotnet-bot illustrations in this repo are licensed under the [CC0 1.0 Universal license](http://creativecommons.org/publicdomain/zero/1.0/).
 
-
 ## Installation
+
 1. Clone repo: `git clone https://github.com/dotnet-foundation/mod-dotnet-bot.git [your-project-folder]`
 2. Install [Jekyll](https://jekyllrb.com/): `bundle install`
-3. Install npm dependencies: `npm install`
-4. Start jekyll: `bundle exec jekyll serve`
-5. Site should be accessible at `http://127.0.0.1:4000`
+3. Add webrick gem: `bundle add webrick`
+
+## Running the project locally
+
+1. Install npm dependencies: `npm install`
+2. Start jekyll: `bundle exec jekyll serve`
+3. Site should be accessible at `http://127.0.0.1:4000`

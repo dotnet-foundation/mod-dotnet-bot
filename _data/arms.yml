@@ -3,11 +3,15 @@
   icon: original.svg
   file: dotnet-bot-arms_original.svg
 
+- title: Balloons
+  icon: balloons.svg
+  file: dotnet-bot-arms_balloons.svg
+
 - title: Claw hands
   icon: claw.svg
   file: dotnet-bot-arms_claw.svg
 
-- title: clown arms
+- title: Clown arms
   icon: clown.svg
   file: dotnet-bot-arms_clown.svg
 

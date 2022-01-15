@@ -3,6 +3,10 @@
   icon: original.svg
   file: dotnet-bot-legs_original.svg
 
+- title: Hightops
+  icon: hightops.svg
+  file: dotnet-bot-legs_hightops.svg
+
 - title: Swim fins
   icon: swim-fins.svg
   file: dotnet-bot-legs_swim_fins.svg

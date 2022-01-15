@@ -1,4 +1,8 @@
-- title: tortouiseshell glasses
+- title: 20 glasses
+  icon: 20-glasses.svg
+  file: dotnet-bot-eyewear_20-glasses.svg
+
+- title: Tortouiseshell glasses
   icon: tortoise-shell-glasses.svg
   file: dotnet-bot-eyewear_tortouiseshell-glasses.svg
 
@@ -18,7 +22,7 @@
   icon: mustache-glasses.svg
   file: dotnet-bot-eyewear_mustache-glasses.svg
 
-- title: black pinch glasses
+- title: Black pinch glasses
   icon: pinch-glasses.svg
   file: dotnet-bot-eyewear_pinch-glasses.svg
 
@@ -34,19 +38,18 @@
   icon: ski-goggles-red.svg
   file: dotnet-bot-eyewear_ski-googles-red.svg
 
-- title: gradient ski goggles
+- title: Gradient ski goggles
   icon: green-ski-goggles.svg
   file: dotnet-bot-eyewear_ski-goggles.svg
 
-- title: white and green snorkel mask 2
+- title: White and green snorkel mask 2
   icon: snorkel-mask-green.svg
   file: dotnet-bot-eyewear_snorkel-mask-green.svg
 
-- title: yellow snorkel mask
+- title: Yellow snorkel mask
   icon: snorkel-mask-yellow.svg
   file: dotnet-bot-eyewear_snorkel-mask-yellow.svg
 
-
-- title: spiral glasses
+- title: Spiral glasses
   icon: spiral-goggles.svg
   file: dotnet-bot-eyewear_spiral-glasses.svg

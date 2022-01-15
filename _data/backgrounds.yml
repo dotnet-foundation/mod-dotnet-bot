@@ -1,4 +1,8 @@
-- title: outter space moon background
+- title: Confetti background
+  icon: dotnet-bot-backgrounds_confetti.svg
+  file: dotnet-bot-backgrounds_confetti.svg
+
+- title: Outer space moon background
   icon: dotnet-bot-backgrounds_space.svg
   file: dotnet-bot-backgrounds_space.svg
   default: false
@@ -23,13 +27,13 @@
   icon: dotnet-bot-backgrounds_dungeons.svg
   file: dotnet-bot-backgrounds_dungeons.svg
 
-- title: Skatepark background
+- title: Skate park background
   icon: dotnet-bot-backgrounds_skateboard.svg
   file: dotnet-bot-backgrounds_skateboard.svg
 
 - title: Ski hill background
-  icon: dotnet-bot-backgrounds_skiier.svg
-  file: dotnet-bot-backgrounds_skiier.svg
+  icon: dotnet-bot-backgrounds_skier.svg
+  file: dotnet-bot-backgrounds_skier.svg
 
 - title: Beach background
   icon: dotnet-bot-backgrounds_snorkeler.svg

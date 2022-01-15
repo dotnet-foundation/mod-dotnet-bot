@@ -1,3 +1,8 @@
+- title: Headband
+  icon: headband.svg
+  file: dotnet-bot-headgear_headband.svg
+  hideAntenna: false
+
 - title: Alien headband
   icon: alien-headband.svg
   file: dotnet-bot-headgear_alien-headband.svg
@@ -8,17 +13,17 @@
   file: dotnet-bot-headgear_beret-black.svg
   hideAntenna: true
 
-- title: raspberry beret
+- title: Raspberry beret
   icon: beret-raspberry.svg
   file: dotnet-bot-headgear_beret-raspberry.svg
   hideAntenna: true
 
-- title: blue bike helmet
+- title: Blue bike helmet
   icon: bike-helmet-blue.svg
   file: dotnet-bot-headgear_bike-helemt-blue.svg
   hideAntenna: true
 
-- title: red bike helmet
+- title: Red bike helmet
   icon: bike-helmet-red.svg
   file: dotnet-bot-headgear_bike-helemt-red.svg
   hideAntenna: true
@@ -28,7 +33,7 @@
   file: dotnet-bot-headgear_clown-hat.svg
   hideAntenna: true
 
-- title: construction hardhat
+- title: Construction hardhat
   icon: construction-hat.svg
   file: dotnet-bot-headgear_construction-hat.svg
   hideAntenna: true
@@ -68,7 +73,7 @@
   file: dotnet-bot-headgear_skateboard-helmet.svg
   hideAntenna: true
 
-- title: winter ski cap
+- title: Winter ski cap
   icon: ski-hat.svg
   file: dotnet-bot-headgear_ski-hat.svg
   hideAntenna: true
@@ -108,7 +113,7 @@
   file: dotnet-bot-headgear_wizard-hat-red.svg
   hideAntenna: true
 
-- title: turquoise wizard hat
+- title: Turquoise wizard hat
   icon: wizard-hat-turquoise.svg
   file: dotnet-bot-headgear_wizard-hat-turquoise.svg
   hideAntenna: true

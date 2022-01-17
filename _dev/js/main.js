@@ -15,3 +15,6 @@ $(function () {
   let objects = new Objects();
   let save = new Save();
 });
+
+var currentYear= new Date().getFullYear();
+document.getElementById("currentYear").innerHTML = currentYear;

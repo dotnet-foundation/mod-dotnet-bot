@@ -1,7 +1,7 @@
 - title: Headband
   icon: headband.svg
   file: dotnet-bot-headgear_headband.svg
-  hideAntenna: false
+  hideAntenna: true
 
 - title: Alien headband
   icon: alien-headband.svg

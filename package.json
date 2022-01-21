@@ -8,7 +8,7 @@
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "child_process": "^1.0.2",
-    "del": "^5.1.0",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",
@@ -19,15 +19,15 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
-    "imagemin-pngquant": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
     "npm-clean": "^1.0.3",
-    "terser-webpack-plugin": "^2.3.2",
-    "webpack": "^4.41.5",
-    "webpack-stream": "^5.2.1"
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^5.66.0",
+    "webpack-stream": "^6.1.2"
   },
   "dependencies": {
-    "@primer/css": "^13.2.0",
+    "@primer/css": "^19.2.0",
     "jquery": "^3.4.1",
-    "primer-core": "^6.7.0"
+    "primer-core": "^7.0.0"
   }
 }

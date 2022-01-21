@@ -26,7 +26,7 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
-    "@primer/css": "^13.2.0",
+    "@primer/css": "^19.2.0",
     "jquery": "^3.4.1",
     "primer-core": "^6.7.0"
   }

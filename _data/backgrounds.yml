@@ -1,6 +1,18 @@
+- title: Balloons background
+  icon: dotnet-bot-backgrounds_balloons.svg
+  file: dotnet-bot-backgrounds_balloons.svg
+
 - title: Confetti background
   icon: dotnet-bot-backgrounds_confetti.svg
   file: dotnet-bot-backgrounds_confetti.svg
+
+- title: Garland background
+  icon: dotnet-bot-backgrounds_garland.svg
+  file: dotnet-bot-backgrounds_garland.svg
+
+- title: Stage background
+  icon: dotnet-bot-backgrounds_stage.svg
+  file: dotnet-bot-backgrounds_stage.svg
 
 - title: Outer space moon background
   icon: dotnet-bot-backgrounds_space.svg

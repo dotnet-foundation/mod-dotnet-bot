@@ -3,6 +3,16 @@
   file: dotnet-bot-headgear_headband.svg
   hideAntenna: true
 
+- title: Bowler hat
+  icon: bowler-hat.svg
+  file: dotnet-bot-headgear_bowler-hat.svg
+  hideAntenna: true
+
+- title: Party hat
+  icon: party-hat.svg
+  file: dotnet-bot-headgear_party-hat.svg
+  hideAntenna: true
+
 - title: Alien headband
   icon: alien-headband.svg
   file: dotnet-bot-headgear_alien-headband.svg

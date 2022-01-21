@@ -7,6 +7,14 @@
   icon: hightops.svg
   file: dotnet-bot-legs_hightops.svg
 
+- title: Allstars
+  icon: allstars.svg
+  file: dotnet-bot-legs_allstars.svg
+
+- title: Boots
+  icon: boots.svg
+  file: dotnet-bot-legs_boots.svg
+
 - title: Swim fins
   icon: swim-fins.svg
   file: dotnet-bot-legs_swim_fins.svg

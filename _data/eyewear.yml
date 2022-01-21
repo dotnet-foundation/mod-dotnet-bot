@@ -2,6 +2,14 @@
   icon: 20-glasses.svg
   file: dotnet-bot-eyewear_20-glasses.svg
 
+- title: Garland glasses
+  icon: garland-glasses.svg
+  file: dotnet-bot-eyewear_garland-glasses.svg
+
+- title: Gradient glasses
+  icon: gradient-glasses.svg
+  file: dotnet-bot-eyewear_gradient-glasses.svg
+
 - title: Tortouiseshell glasses
   icon: tortoise-shell-glasses.svg
   file: dotnet-bot-eyewear_tortouiseshell-glasses.svg

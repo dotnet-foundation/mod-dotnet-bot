@@ -30,12 +30,12 @@
 
 - title: Blue bike helmet
   icon: bike-helmet-blue.svg
-  file: dotnet-bot-headgear_bike-helemt-blue.svg
+  file: dotnet-bot-headgear_bike-helmet-blue.svg
   hideAntenna: true
 
 - title: Red bike helmet
   icon: bike-helmet-red.svg
-  file: dotnet-bot-headgear_bike-helemt-red.svg
+  file: dotnet-bot-headgear_bike-helmet-red.svg
   hideAntenna: true
 
 - title: Clown hat
@@ -74,7 +74,7 @@
   hideAntenna: true
 
 - title: Yellow mohawk
-  icon: mowhawk-yellow.svg
+  icon: mohawk-yellow.svg
   file: dotnet-bot-headgear_mohawk-yellow.svg
   hideAntenna: true
 

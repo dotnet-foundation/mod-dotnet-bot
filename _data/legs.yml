@@ -39,15 +39,15 @@
   icon: dungeon.svg
   file: dotnet-bot-legs_dungeon.svg
 
-- title: legs on Skateboard
+- title: Legs on skateboard
   icon: skateboard.svg
   file: dotnet-bot-legs_skateboard.svg
 
-- title: legs on skis
+- title: Legs on skis
   icon: skis.svg
   file: dotnet-bot-legs_skiis.svg
 
-- title: legs on snowboard
+- title: Legs on snowboard
   icon: snowboard.svg
   file: dotnet-bot-legs_snowboard.svg
 

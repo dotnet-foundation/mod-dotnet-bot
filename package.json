@@ -23,7 +23,7 @@
     "npm-clean": "^1.0.3",
     "terser-webpack-plugin": "^4.2.3",
     "webpack": "^5.66.0",
-    "webpack-stream": "^6.1.2"
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "@primer/css": "^19.2.0",

@@ -1,3 +1,18 @@
+- title: Headband
+  icon: headband.svg
+  file: dotnet-bot-headgear_headband.svg
+  hideAntenna: false
+
+- title: Bowler hat
+  icon: bowler-hat.svg
+  file: dotnet-bot-headgear_bowler-hat.svg
+  hideAntenna: true
+
+- title: Party hat
+  icon: party-hat.svg
+  file: dotnet-bot-headgear_party-hat.svg
+  hideAntenna: true
+
 - title: Alien headband
   icon: alien-headband.svg
   file: dotnet-bot-headgear_alien-headband.svg
@@ -8,19 +23,19 @@
   file: dotnet-bot-headgear_beret-black.svg
   hideAntenna: true
 
-- title: raspberry beret
+- title: Raspberry beret
   icon: beret-raspberry.svg
   file: dotnet-bot-headgear_beret-raspberry.svg
   hideAntenna: true
 
-- title: blue bike helmet
+- title: Blue bike helmet
   icon: bike-helmet-blue.svg
-  file: dotnet-bot-headgear_bike-helemt-blue.svg
+  file: dotnet-bot-headgear_bike-helmet-blue.svg
   hideAntenna: true
 
-- title: red bike helmet
+- title: Red bike helmet
   icon: bike-helmet-red.svg
-  file: dotnet-bot-headgear_bike-helemt-red.svg
+  file: dotnet-bot-headgear_bike-helmet-red.svg
   hideAntenna: true
 
 - title: Clown hat
@@ -28,7 +43,7 @@
   file: dotnet-bot-headgear_clown-hat.svg
   hideAntenna: true
 
-- title: construction hardhat
+- title: Construction hardhat
   icon: construction-hat.svg
   file: dotnet-bot-headgear_construction-hat.svg
   hideAntenna: true
@@ -59,7 +74,7 @@
   hideAntenna: true
 
 - title: Yellow mohawk
-  icon: mowhawk-yellow.svg
+  icon: mohawk-yellow.svg
   file: dotnet-bot-headgear_mohawk-yellow.svg
   hideAntenna: true
 
@@ -68,7 +83,7 @@
   file: dotnet-bot-headgear_skateboard-helmet.svg
   hideAntenna: true
 
-- title: winter ski cap
+- title: Winter ski cap
   icon: ski-hat.svg
   file: dotnet-bot-headgear_ski-hat.svg
   hideAntenna: true
@@ -108,7 +123,7 @@
   file: dotnet-bot-headgear_wizard-hat-red.svg
   hideAntenna: true
 
-- title: turquoise wizard hat
+- title: Turquoise wizard hat
   icon: wizard-hat-turquoise.svg
   file: dotnet-bot-headgear_wizard-hat-turquoise.svg
   hideAntenna: true

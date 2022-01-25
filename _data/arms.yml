@@ -3,11 +3,27 @@
   icon: original.svg
   file: dotnet-bot-arms_original.svg
 
+- title: 20th Balloons
+  icon: 20-balloons.svg
+  file: dotnet-bot-arms_20-balloons.svg
+
+- title: 3 Balloons
+  icon: 3-balloons.svg
+  file: dotnet-bot-arms_3-balloons.svg
+
+- title: Cake pop
+  icon: cake-pop.svg
+  file: dotnet-bot-arms_cake-pop.svg
+
+- title: Presents
+  icon: presents.svg
+  file: dotnet-bot-arms_presents.svg
+
 - title: Claw hands
   icon: claw.svg
   file: dotnet-bot-arms_claw.svg
 
-- title: clown arms
+- title: Clown arms
   icon: clown.svg
   file: dotnet-bot-arms_clown.svg
 

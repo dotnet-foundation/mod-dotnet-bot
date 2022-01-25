@@ -3,6 +3,18 @@
   icon: original.svg
   file: dotnet-bot-legs_original.svg
 
+- title: Hightops
+  icon: hightops.svg
+  file: dotnet-bot-legs_hightops.svg
+
+- title: Allstars
+  icon: allstars.svg
+  file: dotnet-bot-legs_allstars.svg
+
+- title: Boots
+  icon: boots.svg
+  file: dotnet-bot-legs_boots.svg
+
 - title: Swim fins
   icon: swim-fins.svg
   file: dotnet-bot-legs_swim_fins.svg
@@ -27,15 +39,15 @@
   icon: dungeon.svg
   file: dotnet-bot-legs_dungeon.svg
 
-- title: legs on Skateboard
+- title: Legs on skateboard
   icon: skateboard.svg
   file: dotnet-bot-legs_skateboard.svg
 
-- title: legs on skis
+- title: Legs on skis
   icon: skis.svg
   file: dotnet-bot-legs_skiis.svg
 
-- title: legs on snowboard
+- title: Legs on snowboard
   icon: snowboard.svg
   file: dotnet-bot-legs_snowboard.svg
 

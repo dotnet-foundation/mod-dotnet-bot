@@ -1,7 +1,7 @@
 - title: Headband
   icon: headband.svg
   file: dotnet-bot-headgear_headband.svg
-  hideAntenna: true
+  hideAntenna: false
 
 - title: Bowler hat
   icon: bowler-hat.svg

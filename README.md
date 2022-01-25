@@ -27,4 +27,7 @@ The source code is licenced under [MIT](LICENSE). The dotnet-bot illustrations i
 That should be it! 
 
 > Note:
-> On the SVG files, make sure all objects within the svg are grouped. So before you save an svg, do a "select all" and "group" them together.
+> On the SVG files, make sure all objects within the svg are grouped. So before you save an svg, do a "select all" and "group" them together. 
+> Also, export the svg files with the CSS Properties option changed to Presentation Attributes in Advanced Options.
+
+

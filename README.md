@@ -7,7 +7,7 @@ Visit the [mod-dotnet-bot.net](https://mod-dotnet-bot.net) site to get started.
 
 If you found a bug or want to request new parts for the dotnet-bot, submit an issue!
 
-The source code is licenced under [MIT](LICENSE). The dotnet-bot illustrations in this repo are licensed under the [CC0 1.0 Universal license](http://creativecommons.org/publicdomain/zero/1.0/).
+The source code is licenced under [MIT](LICENSE). The dotnet-bot illustrations in this repo are licensed under the [CC0 1.0 Universal license](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ## Installation
 

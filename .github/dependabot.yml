@@ -9,3 +9,12 @@ updates:
     # Ignore patch updates for all dependencies
     - dependency-name: "*"
       update-types: ["version-update:semver-patch"]
+- package-ecosystem: nuget
+  directory: "/api/TweetBot"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  ignore:
+    # Ignore patch updates for all dependencies
+    - dependency-name: "*"
+      update-types: ["version-update:semver-patch"]

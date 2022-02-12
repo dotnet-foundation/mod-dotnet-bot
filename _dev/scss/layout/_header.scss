@@ -492,6 +492,10 @@ $logo-height: 72px;
       width: 100%;
       padding: 0 5% 15px 5%;
     }
+
+    @include start-at($header-breakpoint) {
+      display: flex !important;
+    }
   }
 
   li {

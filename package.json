@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@primer/css": "^20.2.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.6.0",
     "primer-core": "^7.0.0"
   }
 }

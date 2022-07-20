@@ -9,12 +9,12 @@ const Save = require('./modules/save.js');
 
 $(function () {
 //create the app.
-  let app = new App();
-  let viewport = new Viewport();
-  let controls = new Controls();
-  let objects = new Objects();
-  let save = new Save();
+    let app = new App();
+    let viewport = new Viewport();
+    let controls = new Controls();
+    let objects = new Objects();
+    let save = new Save();
 });
 
-var currentYear= new Date().getFullYear();
+var currentYear = new Date().getFullYear();
 document.getElementById("currentYear").innerHTML = currentYear;

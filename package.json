@@ -21,12 +21,12 @@
     "gulp-uglify": "^3.0.2",
     "imagemin-pngquant": "^9.0.2",
     "npm-clean": "^1.0.3",
-    "terser-webpack-plugin": "^5.3.3",
+    "terser-webpack-plugin": "^5.3.5",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "@primer/css": "^20.4.1",
+    "@primer/css": "^20.4.3",
     "jquery": "^3.6.0",
     "primer-core": "^7.0.0"
   }

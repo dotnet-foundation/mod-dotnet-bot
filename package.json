@@ -6,7 +6,7 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "browser-sync": "^2.27.10",
+    "browser-sync": "^2.27.11",
     "child_process": "^1.0.2",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@primer/css": "^20.8.0",
-    "jquery": "^3.6.2",
+    "jquery": "^3.6.3",
     "primer-core": "^7.0.0"
   }
 }

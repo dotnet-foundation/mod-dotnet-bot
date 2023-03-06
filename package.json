@@ -6,7 +6,7 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "browser-sync": "^2.28.1",
+    "browser-sync": "^2.28.3",
     "child_process": "^1.0.2",
     "del": "^7.0.0",
     "gulp": "^4.0.2",

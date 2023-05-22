@@ -6,7 +6,7 @@
     "start": "gulp"
   },
   "devDependencies": {
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^2.29.3",
     "child_process": "^1.0.2",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
@@ -21,8 +21,8 @@
     "gulp-uglify": "^3.0.2",
     "imagemin-pngquant": "^9.0.2",
     "npm-clean": "^1.0.3",
-    "terser-webpack-plugin": "^5.3.8",
-    "webpack": "^5.82.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.83.1",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {

@@ -22,11 +22,11 @@
     "imagemin-pngquant": "^9.0.2",
     "npm-clean": "^1.0.3",
     "terser-webpack-plugin": "^5.3.9",
-    "webpack": "^5.87.0",
+    "webpack": "^5.88.0",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "@primer/css": "^21.0.3",
+    "@primer/css": "^21.0.5",
     "jquery": "^3.7.0",
     "primer-core": "^7.0.0"
   }

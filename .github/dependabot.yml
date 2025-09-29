@@ -6,8 +6,8 @@ updates:
     interval: weekly
   open-pull-requests-limit: 10
   groups:
-    # Group all dependency updates into a single PR to reduce PR noise
-    all-dependencies:
+    # Group all npm dependency updates into a single PR to reduce PR noise
+    npm-dependencies:
       patterns:
         - "*"
 - package-ecosystem: nuget
@@ -16,6 +16,7 @@ updates:
     interval: monthly
   open-pull-requests-limit: 10
   groups:
+    # Group all nuget dependency updates into a single PR to reduce PR noise
     nuget-dependencies:
       patterns:
         - "*"

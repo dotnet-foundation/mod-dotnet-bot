@@ -5,16 +5,18 @@ updates:
   schedule:
     interval: weekly
   open-pull-requests-limit: 10
-  ignore:
-    # Ignore patch updates for all dependencies
-    - dependency-name: "*"
-      update-types: ["version-update:semver-patch"]
+  groups:
+    # Group all npm dependency updates into a single PR to reduce PR noise
+    npm-dependencies:
+      patterns:
+        - "*"
 - package-ecosystem: nuget
   directory: "/api/TweetBot"
   schedule:
     interval: monthly
   open-pull-requests-limit: 10
-  ignore:
-    # Ignore patch updates for all dependencies
-    - dependency-name: "*"
-      update-types: ["version-update:semver-patch"]
+  groups:
+    # Group all nuget dependency updates into a single PR to reduce PR noise
+    nuget-dependencies:
+      patterns:
+        - "*"

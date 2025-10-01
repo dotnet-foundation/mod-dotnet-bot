@@ -22,7 +22,7 @@
     "imagemin-pngquant": "^10.0.0",
     "npm-clean": "^1.0.3",
     "terser-webpack-plugin": "^5.3.14",
-    "webpack": "^5.101.3",
+    "webpack": "^5.102.0",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {

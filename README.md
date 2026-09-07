@@ -17,12 +17,45 @@ The source code is licenced under [MIT](LICENSE). The dotnet-bot illustrations i
 4. Start jekyll: `bundle exec jekyll serve`
 5. Site should be accessible at `http://127.0.0.1:4000`
 
-## Adding new objects
+## Adding New Objects
 
-1. Add new SVGs under > objects > [desired category] (for example, antenna).
-2. Add the icon for the object to the icons folder under the same object folder (for example, objects > antenna > icons).
-3. Open the corresponding category .yml file that's in the \_data folder. (for example, \_data > antenna.yml)
-4. Create a new block that lists the item's title, icon name, and file name (make sure these file names are an exact match of the file you added to the objects folder).
+Before you add objects, understand the structure: each object is an SVG file with 
+metadata. You'll prepare the SVG first, then add it to the repo.
+
+### Step 1: Prepare Your SVG
+
+This is important and easy to mess up, so do this first:
+
+1. In your design tool (Illustrator, Inkscape, Figma, etc.), select all elements 
+   in your SVG
+2. Group them together (Ctrl+G / Cmd+G)
+3. Export/save the SVG with these settings:
+   - CSS Properties → Set to "Presentation Attributes" 
+   - This ensures the styling exports correctly
+4. Save the file with a simple name (e.g., `antenna.svg`, `database.svg`)
+
+If you skip this, the SVG might not render correctly in the bot.
+
+### Step 2: Add Your SVG Files
+
+1. Create a folder for your object category if it doesn't exist:
+   `objects > [desired-category]` (for example: `objects > antenna`)
+2. Add your prepared SVG file to this folder
+3. In the same folder, create an `icons` subfolder
+4. Add a small icon version of your SVG to `objects > [category] > icons`
+
+### Step 3: Register Your Object
+
+Create or update the YAML metadata file for your category.
+
+**File location:** `_data > [category].yml` (for example: `_data > antenna.yml`)
+
+**File format:**
+
+```yaml
+- title: "Object Name"
+  icon: "antenna.svg"      # This is the icon file you added
+  file: "antenna.svg"      # This is the main SVG file
 
 That should be it! 
 
